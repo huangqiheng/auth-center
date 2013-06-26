@@ -1,0 +1,13 @@
+Gentile {userName},
+
+grazie per essersi registrato con community-id.org
+
+Per completare il processo di registrazione, si prega di cliccare il seguente link:
+
+{registrationURL}
+
+
+Grazie,
+Il team Community-ID
+
+Community-ID è un servizio di Keyboard Monkeys Ltd. (Community as a Service)

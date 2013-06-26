@@ -1,0 +1,28 @@
+<form method="post" action="<?php echo $this->base ?>/news/edit/save" class="formGrid">
+    <input type="hidden" name="id" value="<?php echo $this->articleId ?>" />
+    <?php echo $this->articleForm->title ?>
+    <?php echo $this->articleForm->excerpt ?>
+    <?php echo $this->articleForm->date ?>
+    <?php echo $this->articleForm->content ?>
+    <div>
+        <input type="submit" id="save" value="<?php echo $this->translate('Save') ?>" />
+        <input type="button" id="cancel" value="<?php echo $this->translate('Cancel') ?>" />
+        <script type="text/javascript">
+            YAHOO.util.Event.onDOMReady(function () {
+                new YAHOO.widget.Button(
+                    "save",
+                    {
+                        type    : "submit"
+                    }
+                );
+                new YAHOO.widget.Button(
+                    "cancel",
+                    {
+                        type    : "push",
+                        onclick : {fn: function() {COMMID.editArticle.cancel(<?php echo $this->articleId ?>)}}
+                    }
+                );
+            });
+        </script> 
+    </div>
+</form>

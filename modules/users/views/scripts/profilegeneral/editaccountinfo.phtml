@@ -1,0 +1,47 @@
+<form name="accountInfoForm" class="formGrid">
+    <?php echo $this->accountInfoForm->username ?>
+    <?php echo $this->accountInfoForm->firstname ?>
+    <?php echo $this->accountInfoForm->lastname ?>
+    <?php echo $this->accountInfoForm->email ?>
+    <?php if (!$this->targetUser->id) {
+            echo $this->accountInfoForm->password1;
+            echo $this->accountInfoForm->password2;
+    } ?>
+    <? if ($this->yubikey->enabled): ?>
+        <? if (!$this->yubikey->force): ?>
+            <?= $this->accountInfoForm->authMethod ?>
+        <? endif ?>
+        <div id="yubikeyWrapper" style="display:<?= $this->yubikey->force? 'block' : 'none' ?>">
+            <?= $this->accountInfoForm->yubikey ?>
+        </div>
+    <? endif ?>
+    <div class="yui-gf">
+        <div class="yui-u first">&nbsp;</div>
+        <div class="yui-u">
+            <input type="button" id="save" value="<?php echo $this->translate('Save') ?>" onclick="COMMID.editAccountInfo.save()" />
+            <input type="button" id="cancel" value="<?php echo $this->translate('Cancel') ?>" onclick="COMMID.editAccountInfo.cancel()" />
+            <script type="text/javascript">
+                YAHOO.util.Event.onDOMReady(function () {
+                    <? if ($this->yubikey->enabled && !$this->yubikey->force): ?>
+                        COMMID.general.toggleYubikey();
+                    <? endif ?>
+
+                    new YAHOO.widget.Button(
+                        "save",
+                        {
+                            type    : "push",
+                            onclick : {fn: function() {COMMID.editAccountInfo.save()}}
+                        }
+                    );
+                    new YAHOO.widget.Button(
+                        "cancel",
+                        {
+                            type    : "push",
+                            onclick : {fn: function() {COMMID.editAccountInfo.cancel()}}
+                        }
+                    );
+                });
+            </script> 
+        </div>
+    </div>
+</form>

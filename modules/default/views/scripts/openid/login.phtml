@@ -1,0 +1,50 @@
+<div style="position:relative">
+    <? if ($this->form->getErrorMessages()): ?>
+        <div class="messages" style="margin-bottom:20px">
+            <?= implode('<br />', $this->form->getErrorMessages()) ?>
+        </div>
+    <? endif ?>
+    <form name="openidAuthenticate" action="authenticate<?php echo $this->queryString ?>" method="post" class="formGrid">
+        <? if ($this->identity): ?>
+            <div class="yui-gf" style="padding:10px 0">
+                <div class="yui first"><?= $this->translate('OpenID URL') ?>:</div>
+                <div class="yui-u"><?= $this->escape($this->identity) ?></div>
+            </div>
+        <? else: ?>
+            <?= $this->form->openIdIdentity ?>
+        <? endif ?>
+        <? if ($this->yubikey->enabled && $this->yubikey->force): ?>
+            <?= $this->form->yubikey ?>
+        <? else: ?>
+            <?= $this->form->password ?>
+        <? endif ?>
+        <?php if ($this->useCaptcha): ?>
+            <?php echo $this->form->captcha ?>
+        <?php endif ?>
+        <div class="yui-gf">
+            <div class="yui-u first">
+                <input type="submit" id="login" value="<?php echo $this->translate('Login') ?>" />
+                <script type="text/javascript">
+                    var oButton = new YAHOO.widget.Button("login");
+                </script> 
+            </div>
+            <div class="yui-u">&nbsp;</div>
+        </div>
+    </form>
+    <? if ($this->image): ?>
+        <div style="position:absolute; right:-100px; top:-40px">
+            <img src="<?= $this->base ?>/users/signinimage/image/id/<?= $this->image->cookie ?>"
+                width="<?= $this->image->getWidth() ?>"
+                height="<?= $this->image->getHeight() ?>" 
+                title="<?= $this->translate('This is the image that identifies your account in this computer') ?>"
+                alt="<?= $this->translate('This is the image that identifies your account in this computer') ?>" />
+        </div>
+    <? endif ?>
+    <script>
+        try {
+            document.openidAuthenticate.password.focus();
+            document.openidAuthenticate.yubikey.focus();
+        } catch(e) {
+        }
+    </script>
+</div>

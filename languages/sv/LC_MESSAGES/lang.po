@@ -1,0 +1,1310 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Community-ID\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-05-26 11:34-0500\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Keyboard Monkeys <projects@kb-m.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Swedish\n"
+"X-Poedit-Country: SWEDEN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: ../../../\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-SearchPath-0: modules\n"
+"X-Poedit-SearchPath-1: views\n"
+"X-Poedit-SearchPath-2: javascript\n"
+"X-Poedit-SearchPath-3: libs/Monkeys\n"
+"X-Poedit-SearchPath-4: plugins\n"
+
+#: modules/users/forms/SigninImage.php:25
+msgid "Only files of type jpg, jpeg, png and gif are allowed.<br />Maximum size is 2 MB."
+msgstr ""
+
+#: modules/users/forms/AccountInfo.php:26
+#: modules/users/forms/Register.php:45
+msgid "Username"
+msgstr "Användarnamn"
+
+#: modules/users/forms/AccountInfo.php:32
+#: modules/users/forms/Register.php:28
+msgid "First Name"
+msgstr "Förnamn"
+
+#: modules/users/forms/AccountInfo.php:37
+#: modules/users/forms/Register.php:33
+msgid "Last Name"
+msgstr "Efternamn"
+
+#: modules/users/forms/AccountInfo.php:42
+#: modules/users/forms/Register.php:38
+msgid "E-mail"
+msgstr "E-post"
+
+#: modules/users/forms/AccountInfo.php:49
+msgid "Auth Method"
+msgstr ""
+
+#: modules/users/forms/AccountInfo.php:56
+msgid "Associated YubiKey"
+msgstr ""
+
+#: modules/users/forms/AccountInfo.php:64
+#: modules/users/forms/ChangePassword.php:26
+msgid "Enter password"
+msgstr "Skriv lösenordet"
+
+#: modules/users/forms/AccountInfo.php:76
+#: modules/users/forms/Register.php:63
+#: modules/users/forms/ChangePassword.php:38
+msgid "Enter password again"
+msgstr "Skriv lösenordet igen"
+
+#: modules/users/forms/PersonalInfo.php:65
+#, fuzzy
+msgid "Profile Name"
+msgstr "profil"
+
+#: modules/users/forms/Login.php:18
+msgid "USERNAME"
+msgstr "Användarnamn"
+
+#: modules/users/forms/Login.php:27
+msgid "PASSWORD"
+msgstr "Lösenord"
+
+#: modules/users/forms/Register.php:51
+msgid "Enter desired password"
+msgstr "Skriv önskat lösenord"
+
+#: modules/users/forms/Register.php:68
+msgid "Please enter the text below"
+msgstr "Vänligen skriv denna text i rutan nedanför"
+
+#: modules/users/models/User.php:129
+#, fuzzy
+msgid "Default profile"
+msgstr "profil"
+
+#: modules/users/controllers/RegisterController.php:26
+msgid "Sorry, registrations are currently disabled"
+msgstr "Möjligheten att registrera sig är för tillfället avstängd"
+
+#: modules/users/controllers/RegisterController.php:59
+msgid "This username is already in use"
+msgstr "Användarnamnet är upptaget"
+
+#: modules/users/controllers/RegisterController.php:66
+msgid "This E-mail is already in use"
+msgstr "E-postadressen är upptagen"
+
+#: modules/users/controllers/RegisterController.php:95
+msgid "Community-ID registration confirmation"
+msgstr "Community-ID registreringsbekräftelse"
+
+#: modules/users/controllers/RegisterController.php:100
+msgid "Thank you."
+msgstr "Tack så mycket!"
+
+#: modules/users/controllers/RegisterController.php:101
+msgid "You will receive an E-mail with instructions to activate the account."
+msgstr "Vi har nu skickat ett e-brev med instruktioner om hur du aktiverar ditt OpenID."
+
+#: modules/users/controllers/RegisterController.php:104
+msgid "The confirmation E-mail could not be sent, so the account creation was cancelled. Please contact support."
+msgstr ""
+
+#: modules/users/controllers/RegisterController.php:106
+msgid "The account was created but the E-mail could not be sent"
+msgstr "Registreringen är genomförd, men e-brevet kunde inte skickas."
+
+#: modules/users/controllers/RegisterController.php:123
+#: modules/users/controllers/RegisterController.php:141
+#: modules/users/controllers/RegisterController.php:156
+msgid "Invalid token"
+msgstr "Felaktig bekräftelsekod"
+
+#: modules/users/controllers/RegisterController.php:147
+msgid "Your account has been deleted"
+msgstr "Ditt konto har nu raderats"
+
+#: modules/users/controllers/LoginController.php:63
+#: modules/users/controllers/LoginController.php:97
+msgid "Invalid credentials"
+msgstr "Felaktiga inloggningsuppgifter"
+
+#: modules/users/controllers/SigninimageController.php:71
+msgid "There is no image uploaded"
+msgstr ""
+
+#: modules/users/controllers/SigninimageController.php:77
+#, fuzzy
+msgid "There was a problem setting the cookie"
+msgstr "Ett fel uppstod när meddelandet skulle skickas"
+
+#: modules/users/controllers/SigninimageController.php:82
+msgid "Image has been set successfully on this computer/browser"
+msgstr ""
+
+#: modules/users/controllers/SigninimageController.php:86
+msgid "Image has been disabled successfully on this computer/browser"
+msgstr ""
+
+#: modules/users/controllers/RecoverpasswordController.php:51
+msgid "This E-mail is not registered in the system"
+msgstr "Denna e-postadress finns inte registrerad"
+
+#: modules/users/controllers/RecoverpasswordController.php:72
+#: modules/users/controllers/RecoverpasswordController.php:101
+msgid "Community-ID password reset"
+msgstr "Community-ID lösenordsbyte"
+
+#: modules/users/controllers/RecoverpasswordController.php:74
+msgid "Password reset E-mail has been sent"
+msgstr "E-brev för att byta lösenord har skickats"
+
+#: modules/users/controllers/RecoverpasswordController.php:83
+msgid "Wrong Token"
+msgstr "Felaktig bekräftelsekod"
+
+#: modules/users/controllers/RecoverpasswordController.php:103
+msgid "You'll receive your new password via E-mail"
+msgstr "Ett nytt lösenord har skickats till dig via e-post"
+
+#: modules/users/controllers/ProfilegeneralController.php:109
+msgid "Could not validate Yubikey"
+msgstr ""
+
+#: modules/users/controllers/ProfilegeneralController.php:301
+msgid "Account was deleted, but feedback form couldn't be sent to admins"
+msgstr "Kontot har raderats, men meddelandet kunde inte skickas till administratören"
+
+#: modules/users/controllers/ProfilegeneralController.php:315
+msgid "Your acccount has been successfully deleted"
+msgstr "Ditt konto har nu raderats"
+
+#: modules/users/controllers/UserslistController.php:59
+msgid "admin"
+msgstr "admin"
+
+#: modules/users/controllers/UserslistController.php:61
+msgid "confirmed"
+msgstr "godkänd"
+
+#: modules/users/controllers/UserslistController.php:63
+msgid "unconfirmed"
+msgstr "väntande"
+
+#: modules/users/controllers/PersonalinfoController.php:87
+#, fuzzy
+msgid "Profile has been saved"
+msgstr "Nyheten har sparats"
+
+#: modules/users/controllers/PersonalinfoController.php:98
+#, fuzzy
+msgid "Profile has been deleted"
+msgstr "Nyheten har raderats"
+
+#: modules/users/controllers/ManageusersController.php:31
+msgid "User has been deleted successfully"
+msgstr "Användaren har raderats"
+
+#: modules/users/controllers/ManageusersController.php:48
+msgid "Community-ID registration reminder"
+msgstr "Community-ID registreringspåminnelse"
+
+#: modules/default/forms/MessageUsers.php:17
+msgid "Subject"
+msgstr "Ämne"
+
+#: modules/default/forms/MessageUsers.php:22
+msgid "CC"
+msgstr "CC"
+
+#: modules/default/forms/OpenidLogin.php:28
+msgid "OpenID URL"
+msgstr "OpenID URL"
+
+#: modules/default/forms/OpenidLogin.php:35
+msgid "Password"
+msgstr "Lösenord"
+
+#: modules/default/forms/Feedback.php:25
+msgid "Enter your name"
+msgstr "Ditt namn"
+
+#: modules/default/forms/Feedback.php:30
+msgid "Enter your E-mail"
+msgstr "Din e-postadress"
+
+#: modules/default/forms/Feedback.php:37
+msgid "Enter your questions or comments"
+msgstr "Din fråga eller kommentar"
+
+#: modules/default/forms/ErrorMessages.php:20
+msgid "Value is empty, but a non-empty value is required"
+msgstr "Uppgift saknas"
+
+#: modules/default/forms/ErrorMessages.php:21
+msgid "Value is required and can't be empty"
+msgstr "Uppgift saknas"
+
+#: modules/default/forms/ErrorMessages.php:22
+msgid "'%value%' is not a valid email address in the basic format local-part@hostname"
+msgstr "'%value%' är inte en godkänd e-postadress enligt formatet: namn@domän"
+
+#: modules/default/forms/ErrorMessages.php:23
+msgid "'%hostname%' is not a valid hostname for email address '%value%'"
+msgstr "'%hostname%' är ingen godkänd domän för e-postadressen '%value%'"
+
+#: modules/default/forms/ErrorMessages.php:24
+msgid "'%value%' does not match the expected structure for a DNS hostname"
+msgstr "'%value%' ser följer inte strukturen för ett godkänt domännamn"
+
+#: modules/default/forms/ErrorMessages.php:25
+msgid "'%value%' appears to be a DNS hostname but cannot match TLD against known list"
+msgstr "'%value%' ser ut att vara ett domännamn, men det finns ingen toppdomän (texten efter sista punkten) som stämmer med det angivna"
+
+#: modules/default/forms/ErrorMessages.php:26
+msgid "'%value%' appears to be a local network name but local network names are not allowed"
+msgstr "'%value%' ser ut att vara ett lokalt nätverksnamn, men sådana är inte tillåtna"
+
+#: modules/default/forms/ErrorMessages.php:27
+msgid "Captcha value is wrong"
+msgstr "Fel text angiven"
+
+#: modules/default/forms/ErrorMessages.php:28
+msgid "Password confirmation does not match"
+msgstr "Lösenorden är olika"
+
+#: modules/default/forms/ErrorMessages.php:29
+msgid "Username can only contain US-ASCII alphanumeric characters, plus any of the symbols $-_.+!*'(), and \""
+msgstr "Användarnamn kan bara innehålla siffor och bokstäver (utom ÅÄÖ) plus symbolerna $-_.+!*'(), och \""
+
+#: modules/default/forms/ErrorMessages.php:30
+msgid "Username is invalid"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:31
+msgid "The file '%value%' was not uploaded"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:32
+msgid "Password can't be a dictionary word"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:33
+msgid "Password can't contain the username"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:34
+msgid "Password must be longer than %minLength% characters"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:35
+msgid "Password must contain numbers"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:36
+msgid "Password must contain symbols"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:37
+msgid "Password needs to have lowercase and uppercase characters"
+msgstr ""
+
+#: modules/default/models/Field.php:39
+msgid "Male"
+msgstr "Man"
+
+#: modules/default/models/Field.php:40
+msgid "Female"
+msgstr "Kvinna"
+
+#: modules/default/models/Fields.php:62
+msgid "Nickname"
+msgstr "Pseudonym"
+
+#: modules/default/models/Fields.php:64
+msgid "Full Name"
+msgstr "Fullständigt namn"
+
+#: modules/default/models/Fields.php:65
+msgid "Date of Birth"
+msgstr "Födelsedatum"
+
+#: modules/default/models/Fields.php:66
+msgid "Gender"
+msgstr "Kön"
+
+#: modules/default/models/Fields.php:67
+msgid "Postal Code"
+msgstr "Postnummer"
+
+#: modules/default/models/Fields.php:68
+msgid "Country"
+msgstr "Land"
+
+#: modules/default/models/Fields.php:69
+msgid "Language"
+msgstr "Språk"
+
+#: modules/default/models/Fields.php:70
+msgid "Time Zone"
+msgstr "Tidszon"
+
+#: modules/default/controllers/MessageusersController.php:46
+msgid "CC field must be a comma-separated list of valid E-mails"
+msgstr "CC-fältet måste vara en kommaseparerad lista med e-postadresser"
+
+#: modules/default/controllers/MessageusersController.php:86
+msgid "Message has been sent"
+msgstr "Meddelandet har skickats"
+
+#: modules/default/controllers/MessageusersController.php:88
+msgid "There was an error trying to send the message"
+msgstr "Ett fel uppstod när meddelandet skulle skickas"
+
+#: modules/default/controllers/ErrorController.php:18
+msgid "The URL you entered is incorrect. Please correct and try again."
+msgstr ""
+
+#: modules/default/controllers/ErrorController.php:21
+msgid "Access Denied - Maybe your session has expired? Try logging-in again."
+msgstr ""
+
+#: modules/default/controllers/FeedbackController.php:57
+msgid "Thank you for your interest. Your message has been routed."
+msgstr "Tack för ditt meddelande. Det har nu skickats till oss."
+
+#: modules/default/controllers/FeedbackController.php:59
+msgid "Sorry, the feedback couldn't be delivered. Please try again later."
+msgstr "Tyvärr kunde ditt meddelande inte levereras. Vänligen försök igen senare."
+
+#: modules/default/controllers/CidController.php:29
+msgid "Could not retrieve news items"
+msgstr "Kan inte hämta nyheterna"
+
+#: modules/default/controllers/CidController.php:47
+msgid "Read More"
+msgstr "Läs mer..."
+
+#: modules/default/controllers/OpenidController.php:26
+msgid "Forbidden"
+msgstr ""
+
+#: modules/news/forms/Article.php:18
+msgid "Title"
+msgstr "Titel"
+
+#: modules/news/forms/Article.php:24
+msgid "Publication date"
+msgstr "Publiceringsdatum"
+
+#: modules/news/forms/Article.php:32
+msgid "Excerpt"
+msgstr "Ingress"
+
+#: modules/news/controllers/EditController.php:60
+#: modules/news/controllers/EditController.php:90
+msgid "The article doesn't exist."
+msgstr "Nyheten existerar inte."
+
+#: modules/news/controllers/EditController.php:81
+msgid "The article has been saved."
+msgstr "Nyheten har sparats"
+
+#: modules/news/controllers/EditController.php:93
+msgid "The article has been deleted."
+msgstr "Nyheten har raderats"
+
+#: modules/install/forms/Install.php:18
+msgid "Hostname"
+msgstr "Databasserver"
+
+#: modules/install/forms/Install.php:19
+msgid "usually localhost"
+msgstr "vanligen localhost"
+
+#: modules/install/forms/Install.php:27
+msgid "Database name"
+msgstr "Databasens namn"
+
+#: modules/install/forms/Install.php:34
+msgid "Database username"
+msgstr "Databasens användarnamn"
+
+#: modules/install/forms/Install.php:40
+msgid "Database password"
+msgstr "Databasens lösenord"
+
+#: modules/install/forms/Install.php:44
+msgid "Support E-mail"
+msgstr "Support E-postadress"
+
+#: modules/install/forms/Install.php:45
+msgid "Will be used as the sender for any message sent by the system, and as the recipient for user feedback"
+msgstr "Används som ansändare för e-post skickad av systemet och som mottagare av meddelanden från Kontakt-formuläret."
+
+#: modules/install/controllers/UpgradeController.php:80
+#, php-format
+msgid "Upgrade was successful. You are now on version %s"
+msgstr "Uppgraderingen gick bra. Du kör nu med version %s"
+
+#: modules/install/controllers/UpgradeController.php:84
+#, php-format
+msgid "WARNING: there are some new configuration settings. To override their default values (as set in config.default.php) add them to your config.php file. The new settings correspond to the following directives: %s."
+msgstr ""
+
+#: modules/install/controllers/UpgradeController.php:117
+#, php-format
+msgid "Correct before upgrading: File %s is required to proceed"
+msgstr "Vänligen korrigera innan uppgradering: Filen %s krävs för att kunna fortsätta"
+
+#: modules/install/controllers/UpgradeController.php:159
+#, fuzzy
+msgid "Please address the following requirements before proceeding with the upgrade:"
+msgstr "Vänligen rätta till följande problem innan du fortsätter"
+
+#: modules/install/controllers/CredentialsController.php:44
+msgid "We couldn't connect to the database using those credentials."
+msgstr "Det går inte att ansluta till databasen med dessa uppgifter."
+
+#: modules/install/controllers/CredentialsController.php:45
+msgid "Please verify and try again."
+msgstr "Vänligen kontrollera och försök igen."
+
+#: modules/install/controllers/CredentialsController.php:51
+#, php-format
+msgid "The connection to the database engine worked, but the database %s doesn't exist or the provided user doesn't have access to it. An attempt was made to create it, but the provided user doesn't have permissions to do so either. Please create it yourself and try again."
+msgstr "Anslutningen till databasmotorn gick bra, men databasen %s saknas, alternativt har angiven användare inte tillgång till den. Ett försök gjordes att skapa databasen, men den angivna användaren har inte tillåtelse att göra det. Vänligen skapa databasen manuellt och försök igen."
+
+#: modules/install/controllers/CredentialsController.php:230
+#, php-format
+msgid "PHP version %s or greater is required"
+msgstr ""
+
+#: modules/install/controllers/CredentialsController.php:234
+#, php-format
+msgid "The directory where Community-ID is installed must be writable by the web server user (%s). Another option is to create an EMPTY config.php file that is writable by that user."
+msgstr "Mappen där Community-ID är installerat måste vara skrivbart för webbservern (%s). Ett annat alternativ är att skapa en TOM config.php-fil som är skrivbar för användaren."
+
+#: modules/install/controllers/CredentialsController.php:237
+#, php-format
+msgid "The directory \"captchas\" under the web directory for Community-ID must be writable by the web server user (%s)"
+msgstr "Mappen \"captchas\", som ligger under Community-ID-mappen, måste vara skrivbar för webbservern (%s)"
+
+#: modules/install/controllers/CredentialsController.php:240
+#: modules/install/controllers/CredentialsController.php:243
+#: modules/install/controllers/CredentialsController.php:252
+#, php-format
+msgid "You need to have the %s extension installed"
+msgstr "Du måste ha tillägget %s installerat"
+
+#: modules/install/controllers/CredentialsController.php:246
+msgid "You need to have <a href=\"http://www.php.net/manual/en/image.installation.php\">PNG support in your GD configuration</a>"
+msgstr ""
+
+#: modules/install/controllers/CredentialsController.php:249
+msgid "You need to have <a href=\"http://www.php.net/manual/en/image.installation.php\">Freetype support in your GD configuration</a>"
+msgstr ""
+
+#: javascript/language.php:30
+msgid "Name"
+msgstr "Namn"
+
+#: javascript/language.php:31
+msgid "Registration"
+msgstr "Registrerad"
+
+#: javascript/language.php:32
+msgid "Status"
+msgstr "Status"
+
+#: javascript/language.php:33
+msgid "profile"
+msgstr "profil"
+
+#: javascript/language.php:34
+msgid "delete"
+msgstr "radera"
+
+#: javascript/language.php:35
+msgid "Site"
+msgstr "Webbplats"
+
+#: javascript/language.php:36
+msgid "view info exchanged"
+msgstr "visa utväxlad information"
+
+#: javascript/language.php:37
+msgid "deny"
+msgstr "neka"
+
+#: javascript/language.php:38
+msgid "allow"
+msgstr "tillåt"
+
+#: javascript/language.php:39
+msgid "Are you sure you wish to send this message to ALL users?"
+msgstr "Är du säker på att du vill skicka detta meddelande till ALLA användare="
+
+#: javascript/language.php:40
+msgid "Are you sure you wish to deny trust to this site?"
+msgstr "Är du säker på att du vill neka denna webbplats tillträde?"
+
+#: javascript/language.php:41
+msgid "operation failed"
+msgstr "operationen misslyckades"
+
+#: javascript/language.php:42
+msgid "Trust to the following site has been granted:"
+msgstr "Följande webbplats har tillåtits få tillträde:"
+
+#: javascript/language.php:43
+msgid "Trust the following site has been denied:"
+msgstr "Tillträde för denna webbplats har nekats:"
+
+#: javascript/language.php:44
+msgid "ERROR. The server returned:"
+msgstr "FEL. Servern meddelar:"
+
+#: javascript/language.php:45
+msgid "Your relationship with the following site has been deleted:"
+msgstr "Dina relationer med följande webbplats har raderats:"
+
+#: javascript/language.php:46
+msgid "The history log has been cleared"
+msgstr "Besökshistorien har raderats"
+
+#: javascript/language.php:47
+msgid "Are you sure you wish to allow access to this site?"
+msgstr "Är du säker på att du vill tillåta tillträde för denna webbplats?"
+
+#: javascript/language.php:48
+msgid "Are you sure you wish to delete your relationship with this site?"
+msgstr "Är du säker på att du vill radera relationerna med denna webbplats?"
+
+#: javascript/language.php:49
+msgid "Are you sure you wish to delete all the History Log?"
+msgstr "Är du säker på att du vill radera hela besökshistorien?"
+
+#: javascript/language.php:50
+msgid "Are you sure you wish to delete the user"
+msgstr "Är du säker på att du vill radera användaren"
+
+#: javascript/language.php:51
+msgid "Are you sure you wish to delete all the unconfirmed accounts?"
+msgstr "Är du säker på att du vill radera ALLA väntande registreringar?"
+
+#: javascript/language.php:52
+msgid "Date"
+msgstr "Datum"
+
+#: javascript/language.php:53
+msgid "Result"
+msgstr "Händelse"
+
+#: javascript/language.php:54
+msgid "No records found."
+msgstr "Inga poster funna"
+
+#: javascript/language.php:55
+msgid "Loading..."
+msgstr "Hämtar..."
+
+#: javascript/language.php:56
+msgid "Data error."
+msgstr "Datafel"
+
+#: javascript/language.php:57
+msgid "Click to sort ascending"
+msgstr "Sortera i bokstavordning"
+
+#: javascript/language.php:58
+msgid "Click to sort descending"
+msgstr "Sortera i omvänd bokstavordning"
+
+#: javascript/language.php:59
+msgid "Authorized"
+msgstr "Auktoriserad"
+
+#: javascript/language.php:60
+msgid "Denied"
+msgstr "Nekad"
+
+#: javascript/language.php:61
+msgid "of"
+msgstr "av"
+
+#: javascript/language.php:62
+msgid "next"
+msgstr "nästa"
+
+#: javascript/language.php:63
+msgid "prev"
+msgstr "förra"
+
+#: javascript/language.php:64
+msgid "IP"
+msgstr "IP-adress"
+
+#: javascript/language.php:65
+msgid "Delete unconfirmed accounts older than how many days?"
+msgstr "Radera obekräftade konton äldre än hur många dagar?"
+
+#: javascript/language.php:66
+msgid "The value entered is incorrect"
+msgstr "Angivet värde är felaktigt"
+
+#: javascript/language.php:67
+msgid "Send reminder to accounts older than how many days?"
+msgstr "Skicka påminnelse till konton äldre än hur många dagar?"
+
+#: javascript/language.php:68
+msgid "Are you sure you wish to delete this article?"
+msgstr "Är du säker på att du vill radera denna artikel?"
+
+#: javascript/language.php:69
+msgid "reminder"
+msgstr "påminnelse"
+
+#: javascript/language.php:70
+msgid "reminders"
+msgstr "påminnelser"
+
+#: javascript/language.php:71
+#, fuzzy
+msgid "Are you sure you wish to delete this profile?"
+msgstr "Är du säker på att du vill radera denna artikel?"
+
+#: libs/Monkeys/Form/Element/Timezone.php:47
+msgid "-- Select a Timezone --"
+msgstr "-- Välj tidszon --"
+
+#: libs/Monkeys/Form/Element/Country.php:35
+msgid "-- Select a Country --"
+msgstr "-- Välj land --"
+
+#: libs/Monkeys/Form/Element/Language.php:35
+msgid "-- Select a Language --"
+msgstr "-- Välj språk --"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:266
+msgid "January"
+msgstr "Januari"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:267
+msgid "February"
+msgstr "Februari"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:268
+msgid "March"
+msgstr "Mars"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:269
+msgid "April"
+msgstr "April"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:270
+msgid "May"
+msgstr "Maj"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:271
+msgid "June"
+msgstr "Juni"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:272
+msgid "July"
+msgstr "Juli"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:273
+msgid "August"
+msgstr "Augusti"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:274
+msgid "Septembre"
+msgstr "September"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:275
+msgid "October"
+msgstr "Oktober"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:276
+msgid "November"
+msgstr "November"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:277
+msgid "December"
+msgstr "December"
+
+#: plugins/stats/Authorizations.php:21
+msgid "Authorizations per day"
+msgstr "Betrodda webbplatser per dag"
+
+#: plugins/stats/Sites.php:21
+msgid "Trusted Sites"
+msgstr "Betrodda webbplatser"
+
+#: plugins/stats/Sites.php:77
+#: plugins/stats/Sites.php:81
+msgid "Trusted sites"
+msgstr "Betrodda platser"
+
+#: plugins/stats/Sites.php:78
+#: plugins/stats/Sites.php:82
+msgid "Sites per user"
+msgstr "Platser per användare"
+
+#: plugins/stats/Top.php:21
+msgid "Top 10 Trusted Sites"
+msgstr "De 10 mest betrodda webbplatserna"
+
+#: plugins/stats/Registrations.php:21
+msgid "Registrations per day"
+msgstr "Registreringar per dag"
+
+#: modules/users/views/scripts/signinimage/index.phtml:1
+#: modules/users/views/scripts/login/index.phtml:14
+msgid "Sign-in Image"
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:8
+msgid "You haven't uploaded an image yet"
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:11
+msgid "Select an image to use as your Sign-in Image:"
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:15
+#: modules/users/views/scripts/personalinfo/edit.phtml:5
+msgid "Save"
+msgstr "Spara"
+
+#: modules/users/views/scripts/signinimage/index.phtml:23
+msgid "This image will be shown in the log-in and OpenID authentication screens of Community-ID."
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:26
+msgid "It serves as a phishing counter-measure, as only you will recognize your image, proving these pages haven't been falsified."
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:29
+msgid "After having uploaded the image, for the it to be shown you need to enable it on each computer/browser you want to use (the system is cookie-based)."
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:34
+msgid "Use the following button to enable/disable it in the current computer/browser:"
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:39
+msgid "Disable"
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:42
+#, fuzzy
+msgid "Enable"
+msgstr "Man"
+
+#: modules/users/views/scripts/signinimage/index.phtml:51
+msgid "Further instructions will appear after you upload the image."
+msgstr ""
+
+#: modules/users/views/scripts/register/index.phtml:1
+msgid "Registration Form"
+msgstr "Registreringsformulär"
+
+#: modules/users/views/scripts/register/index.phtml:10
+#: modules/users/views/scripts/recoverpassword/index.phtml:4
+msgid "Send"
+msgstr "Skicka"
+
+#: modules/users/views/scripts/register/eula.phtml:1
+msgid "Please read the following EULA in order to continue"
+msgstr "Vänligen läs igenom följande villkor"
+
+#: modules/users/views/scripts/register/eula.phtml:8
+msgid "I AGREE"
+msgstr "GODKÄNN villkoren"
+
+#: modules/users/views/scripts/register/eula.phtml:9
+msgid "I DISAGREE"
+msgstr "Godkänn INTE villkoren"
+
+#: modules/users/views/scripts/login/index.phtml:3
+#, php-format
+msgid "Hello, %s"
+msgstr "Hej, %s"
+
+#: modules/users/views/scripts/login/index.phtml:7
+msgid "Account"
+msgstr "Inställningar"
+
+#: modules/users/views/scripts/login/index.phtml:11
+msgid "Personal Info"
+msgstr "Personinformation"
+
+#: modules/users/views/scripts/login/index.phtml:17
+msgid "Sites database"
+msgstr "Webbplatser"
+
+#: modules/users/views/scripts/login/index.phtml:20
+msgid "History Log"
+msgstr "Besökshistoria"
+
+#: modules/users/views/scripts/login/index.phtml:24
+msgid "Logout"
+msgstr "Logga ut"
+
+#: modules/users/views/scripts/login/index.phtml:29
+msgid "Admin options"
+msgstr "Administration"
+
+#: modules/users/views/scripts/login/index.phtml:32
+msgid "Manage Users"
+msgstr "Hantera användare"
+
+#: modules/users/views/scripts/login/index.phtml:35
+msgid "Message Users"
+msgstr "E-post till användare"
+
+#: modules/users/views/scripts/login/index.phtml:39
+msgid "Disable Maintenance Mode"
+msgstr "Öppna efter underhåll"
+
+#: modules/users/views/scripts/login/index.phtml:41
+msgid "Enable Maintenance Mode"
+msgstr "Stäng för underhåll"
+
+#: modules/users/views/scripts/login/index.phtml:45
+msgid "Statistics"
+msgstr "Statistik"
+
+#: modules/users/views/scripts/login/index.phtml:48
+msgid "About Community-ID"
+msgstr "Om Community-ID"
+
+#: modules/users/views/scripts/login/index.phtml:55
+msgid "User access is currently disabled for system maintenance.<br />Please try again later"
+msgstr "Inloggningen är avstängd på grund av underhåll<br />Vänligen försök senare"
+
+#: modules/users/views/scripts/login/index.phtml:64
+#: modules/users/views/scripts/login/index.phtml:65
+msgid "This is the image that identifies your account in this computer"
+msgstr ""
+
+#: modules/users/views/scripts/login/index.phtml:82
+msgid "Remember me"
+msgstr "Kom ihåg mig"
+
+#: modules/users/views/scripts/login/index.phtml:85
+msgid "Log in"
+msgstr "Logga in"
+
+#: modules/users/views/scripts/login/index.phtml:91
+msgid "Forgot your password?"
+msgstr "Glömt lösenordet?"
+
+#: modules/users/views/scripts/login/index.phtml:98
+msgid "You don't have an account?"
+msgstr "Saknar du inloggning?"
+
+#: modules/users/views/scripts/login/index.phtml:100
+msgid "REGISTER NOW!"
+msgstr "Registrera dig nu!"
+
+#: modules/users/views/scripts/recoverpassword/index.phtml:1
+msgid "Please enter your E-mail below to receive a link to reset your password"
+msgstr "Vänligen skriv din e-postadress i rutan och skicka den, så får du tillbaka en länk där du kan byta lösenord."
+
+#: modules/users/views/scripts/manageusers/index.phtml:11
+msgid "Enter search string"
+msgstr "Skriv sökord"
+
+#: modules/users/views/scripts/manageusers/index.phtml:12
+msgid "Go"
+msgstr "Sök"
+
+#: modules/users/views/scripts/manageusers/index.phtml:13
+msgid "Clear"
+msgstr "Rensa"
+
+#: modules/users/views/scripts/manageusers/index.phtml:16
+msgid "All"
+msgstr "Alla"
+
+#: modules/users/views/scripts/manageusers/index.phtml:19
+msgid "Confirmed"
+msgstr "Godkända"
+
+#: modules/users/views/scripts/manageusers/index.phtml:22
+msgid "Unconfirmed"
+msgstr "Väntande"
+
+#: modules/users/views/scripts/manageusers/index.phtml:29
+msgid "Total users:"
+msgstr "Totalt antal användare:"
+
+#: modules/users/views/scripts/manageusers/index.phtml:30
+msgid "Total confirmed users:"
+msgstr "Antal godkända användare:"
+
+#: modules/users/views/scripts/manageusers/index.phtml:31
+msgid "Total unconfirmed users:"
+msgstr "Antal väntande användare:"
+
+#: modules/users/views/scripts/manageusers/index.phtml:34
+msgid "Add User"
+msgstr "Lägg till användare"
+
+#: modules/users/views/scripts/manageusers/index.phtml:36
+msgid "Delete Unconfirmed Users"
+msgstr "Radera ALLA väntande"
+
+#: modules/users/views/scripts/manageusers/index.phtml:39
+msgid "Send Reminder"
+msgstr "Skicka påminnelse"
+
+#: modules/users/views/scripts/personalinfo/edit.phtml:6
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: modules/users/views/scripts/personalinfo/index.phtml:16
+msgid "This information will be used to automatically populate registration fields to any OpenID transaction that requires so"
+msgstr "Detta är information som kan skickas automatiskt till de webbplaster som ber om det när du loggar in med OpenID"
+
+#: modules/users/views/scripts/personalinfo/index.phtml:23
+#, fuzzy
+msgid "Edit profile"
+msgstr "Ändra nyhet"
+
+#: modules/users/views/scripts/personalinfo/index.phtml:29
+#, fuzzy
+msgid "Delete profile"
+msgstr "Radera nyhet"
+
+#: modules/users/views/scripts/personalinfo/index.phtml:49
+msgid "Not Entered"
+msgstr "Saknas"
+
+#: modules/users/views/scripts/personalinfo/index.phtml:57
+msgid "Add another profile"
+msgstr ""
+
+#: modules/users/views/scripts/profilegeneral/accountinfo.phtml:28
+msgid "OpenID"
+msgstr "OpenID"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:3
+msgid "Why do you want to delete your Community-ID account?"
+msgstr "Varför vill du radera ditt konto hos Community-ID?"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:4
+msgid "Please check all that apply:"
+msgstr "Vänligen kryssa i det som stämmer:"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:8
+msgid "This was just a test account"
+msgstr "Det var bara ett testkonto"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:11
+msgid "I found a better service"
+msgstr "Jag har hittat en bättre tjänst"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:14
+msgid "Service lacked some key features I needed"
+msgstr "Tjänsten saknar funktioner jag behöver"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:17
+msgid "No particular reason"
+msgstr "Ingen speciell orsak"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:20
+msgid "Additional comments:"
+msgstr "Kommentarer:"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:22
+#: modules/users/views/scripts/profile/index.phtml:44
+msgid "Delete Account"
+msgstr "Radera kontot"
+
+#: modules/users/views/scripts/profile/index.phtml:13
+msgid "Account info"
+msgstr "Inställningar"
+
+#: modules/users/views/scripts/profile/index.phtml:18
+msgid "Edit"
+msgstr "Ändra"
+
+#: modules/users/views/scripts/profile/index.phtml:24
+msgid "Change Password"
+msgstr "Byt lösenord"
+
+#: modules/default/views/scripts/index/index-en.phtml:39
+#: modules/default/views/scripts/index/index-sv.phtml:49
+#: modules/default/views/scripts/index/index-de.phtml:39
+#: modules/default/views/scripts/index/index-es.phtml:37
+msgid "There are no news articles yet"
+msgstr "Det saknas ännu nyhetsartiklar"
+
+#: modules/default/views/scripts/index/index-en.phtml:46
+#: modules/default/views/scripts/index/index-sv.phtml:56
+#: modules/default/views/scripts/index/index-de.phtml:46
+#: modules/default/views/scripts/index/index-es.phtml:44
+msgid "View All"
+msgstr "Visa alla"
+
+#: modules/default/views/scripts/index/index-en.phtml:50
+#: modules/default/views/scripts/index/index-sv.phtml:60
+#: modules/default/views/scripts/index/index-de.phtml:50
+#: modules/default/views/scripts/index/index-es.phtml:48
+msgid "Add New Article"
+msgstr "Lägg till nyhetsartikel"
+
+#: modules/default/views/scripts/feedback/index.phtml:1
+msgid "In order to serve you better, we have provided the form below for your questions and comments"
+msgstr "För att kunna ge dig bättre service, ber vi dig skriva dina kommentarer och/eller frågor i nedanstående formulär"
+
+#: modules/default/views/scripts/identity/id.phtml:2
+msgid "This is the identity page for the Community-ID user identified with:"
+msgstr "Detta identitetssidan för "
+
+#: modules/default/views/scripts/messageusers/index.phtml:9
+msgid "This message will be sent to all registered Community-ID users"
+msgstr "Detta meddelande kommer att skickas till ALLA registrerade användare!"
+
+#: modules/default/views/scripts/messageusers/index.phtml:16
+msgid "switch to Plain-Text"
+msgstr "Växla till vanlig text"
+
+#: modules/default/views/scripts/messageusers/index.phtml:19
+msgid "switch to Rich-Text (HTML)"
+msgstr "Växla till HTML"
+
+#: modules/default/views/scripts/openid/trust.phtml:3
+#, php-format
+msgid "A site identifying as %s has asked for confirmation that %s is your identity URL."
+msgstr "Webbplatsen %s ber dig bekräfta att %s är ditt OpenID."
+
+#: modules/default/views/scripts/openid/trust.phtml:9
+msgid "It also requests this additional information about you:"
+msgstr "Den begär även följande information om dig:"
+
+#: modules/default/views/scripts/openid/trust.phtml:10
+msgid "Fields are automatically filled according to the personal info stored in your community-id account."
+msgstr "Informationen fylls i automatiskt enligt den Personinformation du angivit."
+
+#: modules/default/views/scripts/openid/trust.phtml:11
+msgid "Fields marked with * are required."
+msgstr "Fält markerade med * måste fyllas i"
+
+#: modules/default/views/scripts/openid/trust.phtml:16
+msgid "Please wait"
+msgstr ""
+
+#: modules/default/views/scripts/openid/trust.phtml:23
+msgid "Forever"
+msgstr "Bekräfta automatiskt i fortsättningen"
+
+#: modules/default/views/scripts/openid/trust.phtml:26
+msgid "Allow"
+msgstr "Bekräfta"
+
+#: modules/default/views/scripts/openid/trust.phtml:27
+msgid "Deny"
+msgstr "Neka"
+
+#: modules/default/views/scripts/openid/login.phtml:26
+msgid "Login"
+msgstr "Logga in"
+
+#: modules/default/views/scripts/profile/index.phtml:5
+msgid "Please select the profile you want to use:"
+msgstr ""
+
+#: modules/default/views/scripts/profile/index.phtml:20
+#, php-format
+msgid "The privacy policy can be found at %s"
+msgstr "Integritetspolicyn kan hittas på %s"
+
+#: modules/default/views/scripts/history/index.phtml:13
+msgid "Clear History"
+msgstr "Radera "
+
+#: modules/default/views/scripts/sites/index.phtml:15
+msgid "Information Exchanged"
+msgstr "Informationen utväxlad"
+
+#: modules/default/views/scripts/sites/index.phtml:17
+msgid "Information exchanged with:"
+msgstr "Information utväxlad med:"
+
+#: modules/default/views/scripts/sites/index.phtml:21
+msgid "OK"
+msgstr "Ok"
+
+#: modules/default/views/scripts/cid/index.phtml:3
+msgid "Version installed:"
+msgstr "Installerad version:"
+
+#: modules/default/views/scripts/cid/index.phtml:8
+msgid "Latest news from Community-ID:"
+msgstr "Senaste nytt från Community-ID:"
+
+#: modules/news/views/scripts/index/pagination.phtml:10
+#: modules/news/views/scripts/index/pagination.phtml:13
+msgid "Previous"
+msgstr "Föregående"
+
+#: modules/news/views/scripts/index/pagination.phtml:30
+#: modules/news/views/scripts/index/pagination.phtml:33
+msgid "Next"
+msgstr "Nästa"
+
+#: modules/news/views/scripts/index/index.phtml:3
+msgid "Latest News"
+msgstr "Senaste nytt"
+
+#: modules/news/views/scripts/index/index.phtml:16
+#: modules/news/views/scripts/view/index.phtml:3
+#, php-format
+msgid "Published on %s"
+msgstr "Publicerad %s"
+
+#: modules/news/views/scripts/index/index.phtml:21
+msgid "read more"
+msgstr "Läs mer..."
+
+#: modules/news/views/scripts/view/index.phtml:6
+msgid "Edit Article"
+msgstr "Ändra nyhet"
+
+#: modules/news/views/scripts/view/index.phtml:7
+msgid "Delete Article"
+msgstr "Radera nyhet"
+
+#: modules/install/views/scripts/index/index.phtml:2
+msgid "This Community-ID instance hasn't been installed yet"
+msgstr "Community-ID har ännu inte blivit installerad"
+
+#: modules/install/views/scripts/index/index.phtml:5
+msgid "Proceed with installation"
+msgstr "Fortsätt med installationen"
+
+#: modules/install/views/scripts/credentials/index.phtml:3
+msgid "Database and E-mail information"
+msgstr "Databas och e-postinformation"
+
+#: modules/install/views/scripts/credentials/index.phtml:13
+msgid "Administrator User Information"
+msgstr " Information om Administratören"
+
+#: modules/install/views/scripts/permissions/index.phtml:2
+msgid "Please correct the following problems before proceeding:"
+msgstr "Vänligen rätta till följande problem innan du fortsätter"
+
+#: modules/install/views/scripts/permissions/index.phtml:10
+msgid "Check again"
+msgstr "Kontrollera igen"
+
+#: modules/install/views/scripts/complete/index.phtml:2
+msgid "The installation was performed successfully"
+msgstr "Installationen genomfördes utan problem"
+
+#: modules/install/views/scripts/complete/index.phtml:6
+msgid "You can login as the administrator with the username and password you just provided."
+msgstr "Du kan logga in som administratör med användarnamnet och lösenordet du just angav."
+
+#: modules/install/views/scripts/complete/index.phtml:7
+msgid "Please note that this user is only meant for administrative tasks, and cannot have an OpenID credential."
+msgstr "Notera att denna användare endast kan administrera webbplatsen och inte ha ett eget OpenID."
+
+#: modules/install/views/scripts/complete/index.phtml:10
+msgid "Finish"
+msgstr "Avsluta"
+
+#: modules/install/views/scripts/upgrade/index.phtml:1
+msgid "New version detected"
+msgstr "Ny version upptäckt"
+
+#: modules/install/views/scripts/upgrade/index.phtml:3
+msgid "Enter the administrator credentials to proceed with the upgrade:"
+msgstr "Ange administratörens inloggningsuppgifter för att fortsätta med installationen: "
+
+#: modules/install/views/scripts/upgrade/index.phtml:6
+msgid "Make sure you make a copy of the database before, just in case"
+msgstr "Se till att du har en säkerhetskopia på databasen, bara utifall..."
+
+#: views/layouts/layout.phtml:33
+#: views/layouts_monkeys/layout.phtml:33
+msgid "Home"
+msgstr "Hem"
+
+#: views/layouts/layout.phtml:36
+#: views/layouts_monkeys/layout.phtml:36
+msgid "Feedback"
+msgstr "Kontakt"
+
+#: views/layouts/layout.phtml:42
+#: views/layouts_monkeys/layout.phtml:45
+msgid "Your OpenID is:"
+msgstr "Ditt OpenID är:"
+
+#: views/layouts/layout.phtml:59
+#: views/layouts_monkeys/layout.phtml:62
+msgid "Maintenance mode is enabled: user access is restricted"
+msgstr "Webbplatsen stängd för underhåll: Inloggning är avstängd"
+
+#: views/layouts_monkeys/layout.phtml:39
+msgid "Help and Support"
+msgstr ""
+
+#: views/layouts_monkeys/layout.phtml:82
+msgid "Privacy"
+msgstr "Integritetspolicy"
+
+#: views/layouts_monkeys/layout.phtml:85
+msgid "About Us"
+msgstr "Om oss"
+
+#: views/layouts_monkeys/layout.phtml:88
+msgid "Contact Us"
+msgstr "Kontakta oss"
+
+#: plugins/stats/Sites.phtml:2
+msgid "Select view"
+msgstr "Välj tidsperiod"
+
+#: plugins/stats/Sites.phtml:4
+msgid "Last Week"
+msgstr "Förra veckan"
+
+#: plugins/stats/Sites.phtml:5
+msgid "Last Year"
+msgstr "Förra året"
+
+#: plugins/stats/Top.phtml:6
+#, php-format
+msgid "%s users"
+msgstr "%s användare"
+
+#: plugins/stats/Registrations.phtml:5
+msgid "Last Month"
+msgstr "Förra månaden"
+
+#, fuzzy
+#~ msgid "Forgot you password?"
+#~ msgstr "Glömt lösenordet?"
+#~ msgid "Privacy Policy"
+#~ msgstr "Policy för personlig integritet"
+#~ msgid "About Community-id"
+#~ msgstr "Om Community-ID"
+#~ msgid "Body:"
+#~ msgstr "Meddelande:"
+#~ msgid "About"
+#~ msgstr "Om"
+

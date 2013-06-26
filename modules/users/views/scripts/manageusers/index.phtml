@@ -1,0 +1,82 @@
+<script>
+YAHOO.util.Event.onDOMReady(function () {
+    COMMID.loader.insert(
+        ["datasource", "datatable", "paginator", "json", "connection", "dragdrop"],
+        function() {COMMID.usersList.init('all')}
+    );
+});
+</script>
+<div class="links_topleft">
+    <div>
+        <input type="text" id="search" name="search" value="<?php echo $this->translate('Enter search string') ?>" onclick="(function () {COMMID.usersList.clickOnSearch()})()" />
+        <input type="button" id="goSearch" value="<?php echo $this->translate('Go') ?>" />
+        <input type="button" id="clearSearch" value="<?php echo $this->translate('Clear') ?>" />
+    </div>
+    <a href="#" id="links_topleft_all" onclick="COMMID.usersList.init('all'); return false;">
+        <?php echo $this->translate('All') ?>
+    </a>
+    | <a href="#" id="links_topleft_confirmed"  onclick="COMMID.usersList.init('confirmed'); return false;">
+        <?php echo $this->translate('Confirmed') ?>
+    </a>
+    | <a href="#" id="links_topleft_unconfirmed"  onclick="COMMID.usersList.init('unconfirmed'); return false;">
+        <?php echo $this->translate('Unconfirmed') ?>
+    </a>
+</div>
+<div id="paging"></div>
+<div id="dt"></div>
+<?php if ($this->user->role == Users_Model_User::ROLE_ADMIN): ?>
+    <div style="margin-top:10px">
+        <?php echo $this->translate('Total users:') ?> <span id="totalUsers"></span><br />
+        <?php echo $this->translate('Total confirmed users:') ?> <span id="totalConfirmedUsers"></span><br />
+        <?php echo $this->translate('Total unconfirmed users:') ?> <span id="totalUnconfirmedUsers"></span><br />
+    </div>
+    <div style="margin-top:10px">
+        <input type="button" id="addUser" value="<?php echo $this->translate('Add User') ?>" onclick="location.href='<?php echo $this->base ?>/users/profile?userid=0'" />
+        <span id="deleteUnconfirmedSpan">
+            <input type="button" id="deleteUnconfirmed" value="<?php echo $this->translate('Delete Unconfirmed Users') ?>" />
+        </span>
+        <span id="sendReminderSpan">
+            <input type="button" id="sendReminder" value="<?php echo $this->translate('Send Reminder') ?>" />
+        </span>
+        <script type="text/javascript">
+            new YAHOO.widget.Button(
+                "addUser",
+                {
+                    type    : "push",
+                    onclick : {fn: function() {
+                                        location.href='<?php echo $this->base ?>/users/profile?userid=0'
+                                   }
+                              }
+                }
+            );
+            new YAHOO.widget.Button(
+                "deleteUnconfirmed",
+                {
+                    type    : "push",
+                    onclick : {fn: function() {COMMID.usersList.deleteUnconfirmed()}}
+                }
+            );
+            new YAHOO.widget.Button(
+                "sendReminder",
+                {
+                    type    : "push",
+                    onclick : {fn: function() {COMMID.usersList.sendReminder()}}
+                }
+            );
+            new YAHOO.widget.Button(
+                "goSearch",
+                {
+                    type    : "push",
+                    onclick : {fn: function() {COMMID.usersList.submitSearch()}}
+                }
+            );
+            new YAHOO.widget.Button(
+                "clearSearch",
+                {
+                    type    : "push",
+                    onclick : {fn: function() {COMMID.usersList.clearSearch()}}
+                }
+            );
+        </script>
+    </div>
+<?php endif ?>

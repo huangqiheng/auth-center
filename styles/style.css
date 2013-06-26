@@ -1,0 +1,548 @@
+body, html {
+    background-color    : #c0c0c0;
+}
+
+h2 {
+    font-size       : 174%;
+    font-weight     : bold;
+    margin-bottom   : 20px;
+}
+
+h3 {
+    font-size       : 123.1%;
+    font-weight     : bold;
+    margin-bottom   : 10px;
+}
+
+a {
+    color           : blue;
+}
+
+p {
+    margin-bottom   : 10px;
+}
+
+em {
+    font-style  : italic;
+}
+
+dl {
+    margin: 15px 0px 25px 5px;
+}
+
+dl p, form p {
+	margin: 5px 0;
+}
+
+label {
+	font-weight: bold;
+}
+
+dd {
+    padding: 0.5em 0 0 0;
+    position: relative;
+}
+
+dd p {
+    margin-top  : -0.3em;
+    margin-left : 10em;
+    width       : 30em;
+    font-size   : 85%;
+}
+
+/* is this really used? */
+dd label {
+	font-weight: normal;
+}
+
+dt {
+    width: 9em;
+    text-align: right; 
+    padding: 0.5em 0.7em 0 0;
+    clear: left;
+	float: left;
+}
+
+input, textarea {
+    position: relative;
+    top: -5px;
+	padding: 5px;
+	width: 13em;
+}
+
+strong {
+    font-weight : bold;
+}
+
+.formGrid .yui-gf {
+    margin-bottom   : 5px;
+}
+
+.formGrid .first {
+    text-align  : right;
+}
+
+.formGrid .first, .formLabel {
+    font-weight : bold;
+}
+
+.extendedLabel dt {
+    width: auto;
+    float: none;
+    text-align: left; 
+    padding-bottom: 5px;
+}
+
+.longLabelsForm dt {
+    width: 12em;
+}
+
+.shortLabelsForm dt {
+    width: 7em;
+}
+
+#loginForm p {
+    margin-top  : 10px;
+    text-align  : center;
+}
+
+#credentials {
+    margin-top      : 0;
+    margin-bottom   : 0;
+}
+
+#credentials input {
+    width   : 142px;
+}
+
+#rememberMe {
+    width           : 100%;
+    margin-bottom   : 25px;
+}
+
+.formRadio {
+    height:2em;
+}
+
+.formRadio input {
+    top             : 2px;
+    margin-right    : 5px;
+	width           : auto;
+}
+
+.formRadio label {
+    font-weight : normal;
+}
+
+#ddCaptcha input {
+    position    : relative;
+    top         : 5px;
+    left        : 130px;
+}
+
+#doc4 {
+    background-color    : #fff;
+}
+
+#hd #logoAndLinks {
+    position            : relative;
+    height              : 121px;
+    background-image    : url(../images/header_background.png);
+    background-repeat   : repeat-x;
+}
+
+#hd #logoAndLinks #logo {
+    margin-top  : 42px;
+    margin-left : 126px;
+}
+
+#hd #logoAndLinks #topNav {
+    position    : absolute;
+    top         : 0;
+    right       : 97px;
+    padding-top : 22px;
+}
+
+#hd #logoAndLinks #topNav li {
+    display             : inline;
+    margin-right        : 20px;
+}
+
+#hd #logoAndLinks #topNav li a, #hd #logoAndLinks #topNav li a:visited {
+    border-top          : 14px solid #f2f8fa;
+    padding-top         : 10px;
+    font-weight         : bold;
+    text-decoration     : none;
+    color               : #41bdd9;
+    font-size           : 85%;
+}
+
+#hd #logoAndLinks #topNav li a:hover {
+    border-top          : 14px solid #41bdd9;
+}
+
+#hd #logoAndLinks #openid {
+    position    : absolute;
+    right       : 20px;
+    bottom      : 10px;
+}
+
+#bd {
+    background-color    : #fff;
+    background-image    : url(../images/content_background.png);
+    background-repeat   : repeat-x;
+}
+
+#content p {
+    padding-right   : 20px;
+}
+
+#content.singleColumn {
+    padding : 50px 126px;
+}
+
+#content.doubleColumn {
+    padding : 50px 10px 50px 126px;
+}
+
+#ft {
+    height              : 161px;
+    background-image    : url(../images/footer_background.png);
+    background-repeat   : repeat-x;
+    padding-top         : 35px;
+    padding-left        : 126px;
+}
+
+#ft #footerLinks li {
+    display             : inline;
+    margin-right        : 20px;
+}
+
+#ft #footerLinks li a, #ft #footerLinks li a:visited {
+    font-weight         : bold;
+    text-decoration     : none;
+    color               : #41bdd9;
+    font-size           : 85%;
+}
+
+#ft #copyright {
+    margin-top          : 20px;
+    font-size           : 85%;
+}
+
+#subheader {
+    position            : relative;
+    background-image    : url(../images_monkeys/subheader_background.png);
+    height              : 287px;
+    padding-left        : 126px;
+}
+
+#subheader p {
+    margin-top  : 30px;
+    color       : #3894aa;
+    font-weight : bold;
+    font-size   : 123.1%;
+    line-height : 167%;
+}
+
+#subheader #learMore {
+    position        : absolute;
+    bottom          : 45px;
+}
+
+#subheader #getStarted {
+    position        : absolute;
+    z-index         : 2;
+    bottom          : 45px;
+    right           : 117px;
+}
+
+#subheader #subheaderImage {
+    position        : absolute;
+    top             : -50px;
+    right           : 117px;
+}
+
+#sidebar hr {
+    margin  : 20px 0;
+}
+
+#sidebar #sidebarContents {
+    padding-top     : 50px;
+    padding-left    : 20px;
+    padding-right   : 117px;
+    border-left     : 2px solid #d7d7d7;
+}
+
+.borderFadingLeft {
+    height              : 91px;
+    background-image    : url(../images/sidebar_border_left.png);
+    background-repeat   : no-repeat;
+}
+
+.messages {
+    text-align  : center;
+    font-weight : bold;
+    color       : red;
+}
+
+.messages_small {
+    text-align  : center;
+    font-weight : bold;
+    color       : red;
+    font-size   : 85%;
+}
+
+.register {
+	margin-left: 5px;
+	width: 106px;
+	height: 138px;
+	background: url(../images/menu_register.jpg) no-repeat;
+	float: left;
+}
+
+.accountForm {
+    position    : relative;
+}
+
+.linksTopRightContainer {
+    position        : relative;
+}
+
+.linksTopRight {
+    position    : absolute;
+    right       : 0;
+    top         : 0;
+    font-style  : normal;
+}
+
+.linksTopRight a {
+    font-size   : 10px;
+    font-weight : normal;
+    font-style  : normal;
+}
+
+.linksTopRight img {
+    margin-left : 20px;
+}
+
+#loginButton {
+    text-align  : right;
+}
+
+#registerNow {
+    text-align  : center;
+}
+
+#registerNow a {
+    margin-top  : 20px;
+}
+
+#registerNow div a {
+    font-weight : bold;
+}
+
+#textareasWrapper {
+    position    : relative;
+}
+
+#textareasWrapper #linkSwitchToRich {
+    display : none;
+}
+
+#textareasWrapper #linkSwitchToPlain,
+#textareasWrapper #linkSwitchToRich {
+    position    : absolute;
+    top         : 10px;
+    right       : 0;
+}
+
+#messageUsersForm {
+    margin-top  : 30px;
+}
+
+#messageUsersForm #bodyPlainWrapper {
+    display : none;
+    width   : 510px;
+}
+
+#messageUsersForm textarea {
+    width   : 100%;
+}
+
+#messageUsersForm #textareasWrapper dd {
+    clear       : both;
+}
+
+.links_topleft {
+    position        : relative;
+    margin-bottom   : 20px;
+}
+
+.links_topleft div {
+    position    : absolute;
+    right       : 0;
+}
+
+.links_topleft div #search {
+    padding             : 0;
+    background-image    : url(../images/search_icon.png);
+    background-position : left center;
+    background-repeat   : no-repeat;
+    padding-left        : 23px;
+}
+
+.enabledLink {
+    text-decoration : underline;
+    color           : blue;
+    font-weight     : normal;
+}
+
+.disabledLink {
+    text-decoration : none;
+    color           : #000;
+    font-weight     : bold;
+}
+
+.article_date {
+    position        : relative;
+    color           : #65707A;
+    font-size       : 93%;
+    font-style      : italic;
+    margin-bottom   : 20px; 
+}
+
+.more {
+    text-align      : right;
+    margin-bottom   : 30px;
+}
+
+.paginationControl {
+    text-align  : center;
+    font-size   : 116%;
+}
+
+.yubiKeyInput {
+    background: url(../images/yubiright_16x16.gif) no-repeat scroll 2px 5px;
+    padding-left: 20px;
+}
+
+
+/* --------   YUI RTE ---------- */
+
+.yui-skin-sam .yui-toolbar-container .yui-toolbar-editcode span.yui-toolbar-icon {
+    background-image: url( images/html_editor.gif );
+    background-position: 0 1px;
+    left: 5px;
+}
+.yui-skin-sam .yui-toolbar-container .yui-button-editcode-selected span.yui-toolbar-icon {
+    background-image: url( images/html_editor.gif );
+    background-position: 0 1px;
+    left: 5px;
+}
+
+/* The ID of the editor's container and the bottom right resize handle. */
+#editor_container .yui-resize-handle-br {
+    /* Make the handle a little bigger than the default */
+    height: 11px;
+    width: 11px;
+    /* Resposition the image */
+    background-position: -20px -60px;
+    /* Kill the hover on the handle */
+    background-color: transparent;
+}
+
+.editor-hidden {
+    visibility: hidden;
+    top: -9999px;
+    left: -9999px;
+    position: absolute;
+}
+
+.errors {
+    list-style-type : none;
+    font-weight     : bold;
+    color           : red;
+    margin          : 0 0 20px 0;
+    padding         : 0;
+}
+
+#confirmDeleteForm ul {
+    margin      : 20px 0 0 20px;
+}
+
+#confirmDeleteForm li {
+    margin  : 10px 0 10px;
+}
+
+#confirmDeleteForm ul input {
+    margin-right    : 5px;
+}
+
+#confirmDeleteForm label {
+    display     : block;
+    margin      : 20px 0 10px;
+    font-weight : normal;
+}
+
+#confirmDeleteForm textarea {
+    width           : 400px;
+    height          : 100px;
+    margin-bottom   : 20px;
+}
+
+#feedbackForm {
+    margin-top  : 40px;
+}
+
+#fieldsDialog {
+    display     : none;
+}
+
+#fieldsDialogDl {
+    margin-top: 10px;
+}
+
+#clearHistory {
+    margin-top  : 10px;
+    text-align  : right;
+    display     : none;
+}
+
+#home h2 {
+    margin-bottom   : 40px;
+}
+
+#home .first {
+    text-align  : justify;
+}
+
+#home #homeNews {
+    padding-left    : 20px;
+    border-left     : 2px solid #d7d7d7;
+}
+
+#home #homeNews h3 {
+    text-align      : left;
+    margin-bottom   : 30px;
+}
+
+#home #homeNews .readMore {
+    font-size   : 77%;
+}
+
+#home #homeNews .newsExcerpt {
+    margin-bottom   : 30px;
+}
+
+.reportTitle {
+    text-align  : center;
+}
+
+#topTenTable tr {
+    border-bottom   : 1px solid black;
+}
+
+#topTenTable td {
+    padding : 3px 5px;
+}

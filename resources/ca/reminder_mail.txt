@@ -1,0 +1,11 @@
+Benvolgut {userName},
+
+No hem rebut la confirmació del seu compte en Community-ID.org
+
+Si us plau confirmi'ns el seu compte fent clic en el següent enllaç, o el seu compte serà totalment el·liminat aquí a pocs dies:
+
+{registrationURL}
+
+
+Gràcies,
+L'equip de Community-ID.org

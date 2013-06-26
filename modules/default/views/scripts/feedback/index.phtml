@@ -1,0 +1,11 @@
+<h3><?php echo $this->translate('In order to serve you better, we have provided the form below for your questions and comments') ?></h3>
+<form id="feedbackForm" method="post" action="<?php echo $this->base ?>/feedback/send" class="formGrid">
+    <?php echo $this->form->name ?>
+    <?php echo $this->form->email ?>
+    <?php echo $this->form->feedback ?>
+    <?php echo $this->form->captcha ?>
+    <input type="submit" id="send" value="<?php echo $this->translate('Send') ?>" />
+    <script type="text/javascript">
+        var oButton = new YAHOO.widget.Button("send");
+    </script> 
+</form>

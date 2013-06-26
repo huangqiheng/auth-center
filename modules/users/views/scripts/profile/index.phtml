@@ -1,0 +1,51 @@
+<script>
+YAHOO.util.Event.onDOMReady(function () {
+    COMMID.loader.insert(
+        // "connection" is required by COMMID.general methods
+        ["connection"],
+        null
+    );
+});
+</script>
+
+<div class="accountForm">
+    <div>
+        <h2><?php echo $this->translate('Account info') ?></h2>
+        <?php if ($this->targetUser->id == $this->user->id): ?>
+        <div class="linksTopRight">
+            <? if ($this->canEditAccountInfo): ?>
+                <a href="javascript:void(0);" onclick="COMMID.general.editAccountInfo();">
+                    <?php echo $this->translate('Edit') ?>
+                </a>
+            <? endif ?>
+            <? if ($this->canChangePassword && (!$this->yubikey->enabled || !$this->yubikey->force)): ?>
+                &nbsp;|&nbsp;
+                <a href="javascript:void(0);" onclick="COMMID.general.changePassword()" >
+                    <?php echo $this->translate('Change Password') ?>
+                </a>
+            <? endif ?>
+            <img id="loadingAccountInfo" src="<?php echo $this->base ?>/images/progress.gif" style="visibility:hidden" />
+        </div>
+        <?php endif ?>
+    </div>
+    <div id="accountInfo">
+        <?php if ($this->targetUser->id) {
+            echo $this->action('accountinfo', 'profilegeneral', 'users', array('userid' => $this->targetUser->id));
+        } else {
+            // user id == 0 means we're entering info for a new user
+            echo $this->action('editaccountinfo', 'profilegeneral', 'users', array('userid' => $this->targetUser->id));
+        } ?>
+    </div>
+    <?php if ($this->targetUser->id && $this->targetUser->id == $this->user->id): ?>
+    <div class="accountForm">
+        <div class="linksTopRight" >
+            <?php if ($this->user->role == Users_Model_User::ROLE_REGISTERED && $this->canEditAccountInfo): ?>
+                <a href="<?php echo $this->base ?>/users/profilegeneral/confirmdelete">
+                    <?php echo $this->translate('Delete Account') ?>
+                </a>
+            <?php endif ?>
+            <img id="loadingAccountInfoDummy" src="<?php echo $this->base ?>/images/progress.gif" style="visibility:hidden" /><!-- just for layout -->
+        </div>
+    </div>
+    <?php endif ?>
+</div>

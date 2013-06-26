@@ -1,0 +1,1345 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Community-ID English translation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-05-26 11:34-0500\n"
+"PO-Revision-Date: 2010-05-26 11:34-0500\n"
+"Last-Translator: Keyboard Monkeys <projects@kb-m.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: ../../../\n"
+"X-Poedit-SearchPath-0: modules\n"
+"X-Poedit-SearchPath-1: views\n"
+"X-Poedit-SearchPath-2: javascript\n"
+"X-Poedit-SearchPath-3: libs/Monkeys\n"
+"X-Poedit-SearchPath-4: plugins\n"
+
+#: modules/users/forms/SigninImage.php:25
+msgid "Only files of type jpg, jpeg, png and gif are allowed.<br />Maximum size is 2 MB."
+msgstr ""
+
+#: modules/users/forms/AccountInfo.php:26
+#: modules/users/forms/Register.php:45
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: modules/users/forms/AccountInfo.php:32
+#: modules/users/forms/Register.php:28
+msgid "First Name"
+msgstr "Voornaam:"
+
+#: modules/users/forms/AccountInfo.php:37
+#: modules/users/forms/Register.php:33
+msgid "Last Name"
+msgstr "Achternaam:"
+
+#: modules/users/forms/AccountInfo.php:42
+#: modules/users/forms/Register.php:38
+msgid "E-mail"
+msgstr "E-mail"
+
+#: modules/users/forms/AccountInfo.php:49
+msgid "Auth Method"
+msgstr ""
+
+#: modules/users/forms/AccountInfo.php:56
+msgid "Associated YubiKey"
+msgstr ""
+
+#: modules/users/forms/AccountInfo.php:64
+#: modules/users/forms/ChangePassword.php:26
+msgid "Enter password"
+msgstr "Vul wachtwoord in:"
+
+#: modules/users/forms/AccountInfo.php:76
+#: modules/users/forms/Register.php:63
+#: modules/users/forms/ChangePassword.php:38
+msgid "Enter password again"
+msgstr "Vul wachtwoord nogmaals in:"
+
+#: modules/users/forms/PersonalInfo.php:65
+#, fuzzy
+msgid "Profile Name"
+msgstr "profiel"
+
+#: modules/users/forms/Login.php:18
+msgid "USERNAME"
+msgstr "GEBRUIKERSNAAM"
+
+#: modules/users/forms/Login.php:27
+msgid "PASSWORD"
+msgstr "WACHTWOORD"
+
+#: modules/users/forms/Register.php:51
+msgid "Enter desired password"
+msgstr "Vul gewenste wachtwoord in:"
+
+#: modules/users/forms/Register.php:68
+msgid "Please enter the text below"
+msgstr "Vul onderstaande tekst in:"
+
+#: modules/users/models/User.php:129
+#, fuzzy
+msgid "Default profile"
+msgstr "profiel"
+
+#: modules/users/controllers/RegisterController.php:26
+msgid "Sorry, registrations are currently disabled"
+msgstr "Sorry, registratie is momenteel niet mogelijk"
+
+#: modules/users/controllers/RegisterController.php:59
+msgid "This username is already in use"
+msgstr "Deze gebruikersnaam is in gebruik"
+
+#: modules/users/controllers/RegisterController.php:66
+msgid "This E-mail is already in use"
+msgstr "Dit E-mail adres is in gebruik"
+
+#: modules/users/controllers/RegisterController.php:95
+msgid "Community-ID registration confirmation"
+msgstr ""
+
+#: modules/users/controllers/RegisterController.php:100
+msgid "Thank you."
+msgstr ""
+
+#: modules/users/controllers/RegisterController.php:101
+msgid "You will receive an E-mail with instructions to activate the account."
+msgstr ""
+
+#: modules/users/controllers/RegisterController.php:104
+msgid "The confirmation E-mail could not be sent, so the account creation was cancelled. Please contact support."
+msgstr ""
+
+#: modules/users/controllers/RegisterController.php:106
+msgid "The account was created but the E-mail could not be sent"
+msgstr ""
+
+#: modules/users/controllers/RegisterController.php:123
+#: modules/users/controllers/RegisterController.php:141
+#: modules/users/controllers/RegisterController.php:156
+msgid "Invalid token"
+msgstr ""
+
+#: modules/users/controllers/RegisterController.php:147
+#, fuzzy
+msgid "Your account has been deleted"
+msgstr "Je account is succesvol verwijderd"
+
+#: modules/users/controllers/LoginController.php:63
+#: modules/users/controllers/LoginController.php:97
+msgid "Invalid credentials"
+msgstr ""
+
+#: modules/users/controllers/SigninimageController.php:71
+msgid "There is no image uploaded"
+msgstr ""
+
+#: modules/users/controllers/SigninimageController.php:77
+msgid "There was a problem setting the cookie"
+msgstr ""
+
+#: modules/users/controllers/SigninimageController.php:82
+msgid "Image has been set successfully on this computer/browser"
+msgstr ""
+
+#: modules/users/controllers/SigninimageController.php:86
+msgid "Image has been disabled successfully on this computer/browser"
+msgstr ""
+
+#: modules/users/controllers/RecoverpasswordController.php:51
+#, fuzzy
+msgid "This E-mail is not registered in the system"
+msgstr "Dit E-mail adres is in gebruik"
+
+#: modules/users/controllers/RecoverpasswordController.php:72
+#: modules/users/controllers/RecoverpasswordController.php:101
+msgid "Community-ID password reset"
+msgstr ""
+
+#: modules/users/controllers/RecoverpasswordController.php:74
+msgid "Password reset E-mail has been sent"
+msgstr ""
+
+#: modules/users/controllers/RecoverpasswordController.php:83
+msgid "Wrong Token"
+msgstr ""
+
+#: modules/users/controllers/RecoverpasswordController.php:103
+msgid "You'll receive your new password via E-mail"
+msgstr ""
+
+#: modules/users/controllers/ProfilegeneralController.php:109
+msgid "Could not validate Yubikey"
+msgstr ""
+
+#: modules/users/controllers/ProfilegeneralController.php:301
+msgid "Account was deleted, but feedback form couldn't be sent to admins"
+msgstr ""
+
+#: modules/users/controllers/ProfilegeneralController.php:315
+msgid "Your acccount has been successfully deleted"
+msgstr "Je account is succesvol verwijderd"
+
+#: modules/users/controllers/UserslistController.php:59
+msgid "admin"
+msgstr "admin"
+
+#: modules/users/controllers/UserslistController.php:61
+msgid "confirmed"
+msgstr "bevestigd"
+
+#: modules/users/controllers/UserslistController.php:63
+msgid "unconfirmed"
+msgstr "onbevestigd"
+
+#: modules/users/controllers/PersonalinfoController.php:87
+#, fuzzy
+msgid "Profile has been saved"
+msgstr "De historische logs zijn verwijderd"
+
+#: modules/users/controllers/PersonalinfoController.php:98
+#, fuzzy
+msgid "Profile has been deleted"
+msgstr "De historische logs zijn verwijderd"
+
+#: modules/users/controllers/ManageusersController.php:31
+msgid "User has been deleted successfully"
+msgstr "Gebruiker is succesvol verwijderd"
+
+#: modules/users/controllers/ManageusersController.php:48
+msgid "Community-ID registration reminder"
+msgstr ""
+
+#: modules/default/forms/MessageUsers.php:17
+#, fuzzy
+msgid "Subject"
+msgstr "Onderwerp:"
+
+#: modules/default/forms/MessageUsers.php:22
+#, fuzzy
+msgid "CC"
+msgstr "CC:"
+
+#: modules/default/forms/OpenidLogin.php:28
+#, fuzzy
+msgid "OpenID URL"
+msgstr "Open ID"
+
+#: modules/default/forms/OpenidLogin.php:35
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: modules/default/forms/Feedback.php:25
+msgid "Enter your name"
+msgstr "Vul je naam in:"
+
+#: modules/default/forms/Feedback.php:30
+msgid "Enter your E-mail"
+msgstr "Vul je E-mail adres in:"
+
+#: modules/default/forms/Feedback.php:37
+msgid "Enter your questions or comments"
+msgstr "Vul je vragen of reaktie in:"
+
+#: modules/default/forms/ErrorMessages.php:20
+msgid "Value is empty, but a non-empty value is required"
+msgstr "Waarde is leeg, deze mag niet leeg zijn"
+
+#: modules/default/forms/ErrorMessages.php:21
+msgid "Value is required and can't be empty"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:22
+msgid "'%value%' is not a valid email address in the basic format local-part@hostname"
+msgstr "'%value%' is geen valide E-mail adres in het formaat local-part@hostname"
+
+#: modules/default/forms/ErrorMessages.php:23
+msgid "'%hostname%' is not a valid hostname for email address '%value%'"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:24
+msgid "'%value%' does not match the expected structure for a DNS hostname"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:25
+msgid "'%value%' appears to be a DNS hostname but cannot match TLD against known list"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:26
+msgid "'%value%' appears to be a local network name but local network names are not allowed"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:27
+msgid "Captcha value is wrong"
+msgstr "De Captcha inhoud is onjuist"
+
+#: modules/default/forms/ErrorMessages.php:28
+msgid "Password confirmation does not match"
+msgstr "Wachtwoord bevestiging komt niet overeen"
+
+#: modules/default/forms/ErrorMessages.php:29
+msgid "Username can only contain US-ASCII alphanumeric characters, plus any of the symbols $-_.+!*'(), and \""
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:30
+msgid "Username is invalid"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:31
+msgid "The file '%value%' was not uploaded"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:32
+msgid "Password can't be a dictionary word"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:33
+msgid "Password can't contain the username"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:34
+msgid "Password must be longer than %minLength% characters"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:35
+msgid "Password must contain numbers"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:36
+msgid "Password must contain symbols"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:37
+msgid "Password needs to have lowercase and uppercase characters"
+msgstr ""
+
+#: modules/default/models/Field.php:39
+msgid "Male"
+msgstr "Man"
+
+#: modules/default/models/Field.php:40
+msgid "Female"
+msgstr "Vrouw"
+
+#: modules/default/models/Fields.php:62
+msgid "Nickname"
+msgstr "Nickname"
+
+#: modules/default/models/Fields.php:64
+msgid "Full Name"
+msgstr "Volledige naam"
+
+#: modules/default/models/Fields.php:65
+msgid "Date of Birth"
+msgstr "Geboortedatum"
+
+#: modules/default/models/Fields.php:66
+msgid "Gender"
+msgstr "Geslacht"
+
+#: modules/default/models/Fields.php:67
+msgid "Postal Code"
+msgstr "Postcode"
+
+#: modules/default/models/Fields.php:68
+msgid "Country"
+msgstr "Land"
+
+#: modules/default/models/Fields.php:69
+msgid "Language"
+msgstr "Taal"
+
+#: modules/default/models/Fields.php:70
+msgid "Time Zone"
+msgstr "Tijdzone"
+
+#: modules/default/controllers/MessageusersController.php:46
+msgid "CC field must be a comma-separated list of valid E-mails"
+msgstr "Het CC veld moet een door komma's gescheiden lijst van geldige E-mail adressen zijn"
+
+#: modules/default/controllers/MessageusersController.php:86
+#, fuzzy
+msgid "Message has been sent"
+msgstr "Stuur bericht aan gebruikers"
+
+#: modules/default/controllers/MessageusersController.php:88
+msgid "There was an error trying to send the message"
+msgstr ""
+
+#: modules/default/controllers/ErrorController.php:18
+msgid "The URL you entered is incorrect. Please correct and try again."
+msgstr ""
+
+#: modules/default/controllers/ErrorController.php:21
+msgid "Access Denied - Maybe your session has expired? Try logging-in again."
+msgstr ""
+
+#: modules/default/controllers/FeedbackController.php:57
+msgid "Thank you for your interest. Your message has been routed."
+msgstr ""
+
+#: modules/default/controllers/FeedbackController.php:59
+msgid "Sorry, the feedback couldn't be delivered. Please try again later."
+msgstr ""
+
+#: modules/default/controllers/CidController.php:29
+msgid "Could not retrieve news items"
+msgstr "Kon geen nieuws items ophalen"
+
+#: modules/default/controllers/CidController.php:47
+msgid "Read More"
+msgstr "Lees verder"
+
+#: modules/default/controllers/OpenidController.php:26
+msgid "Forbidden"
+msgstr ""
+
+#: modules/news/forms/Article.php:18
+#, fuzzy
+msgid "Title"
+msgstr "Site"
+
+#: modules/news/forms/Article.php:24
+msgid "Publication date"
+msgstr ""
+
+#: modules/news/forms/Article.php:32
+msgid "Excerpt"
+msgstr ""
+
+#: modules/news/controllers/EditController.php:60
+#: modules/news/controllers/EditController.php:90
+msgid "The article doesn't exist."
+msgstr ""
+
+#: modules/news/controllers/EditController.php:81
+#, fuzzy
+msgid "The article has been saved."
+msgstr "De historische logs zijn verwijderd"
+
+#: modules/news/controllers/EditController.php:93
+#, fuzzy
+msgid "The article has been deleted."
+msgstr "De historische logs zijn verwijderd"
+
+#: modules/install/forms/Install.php:18
+#, fuzzy
+msgid "Hostname"
+msgstr "Home"
+
+#: modules/install/forms/Install.php:19
+msgid "usually localhost"
+msgstr ""
+
+#: modules/install/forms/Install.php:27
+msgid "Database name"
+msgstr ""
+
+#: modules/install/forms/Install.php:34
+msgid "Database username"
+msgstr ""
+
+#: modules/install/forms/Install.php:40
+#, fuzzy
+msgid "Database password"
+msgstr "Vul wachtwoord in:"
+
+#: modules/install/forms/Install.php:44
+#, fuzzy
+msgid "Support E-mail"
+msgstr "E-mail"
+
+#: modules/install/forms/Install.php:45
+msgid "Will be used as the sender for any message sent by the system, and as the recipient for user feedback"
+msgstr ""
+
+#: modules/install/controllers/UpgradeController.php:80
+#, php-format
+msgid "Upgrade was successful. You are now on version %s"
+msgstr ""
+
+#: modules/install/controllers/UpgradeController.php:84
+#, php-format
+msgid "WARNING: there are some new configuration settings. To override their default values (as set in config.default.php) add them to your config.php file. The new settings correspond to the following directives: %s."
+msgstr ""
+
+#: modules/install/controllers/UpgradeController.php:117
+#, php-format
+msgid "Correct before upgrading: File %s is required to proceed"
+msgstr ""
+
+#: modules/install/controllers/UpgradeController.php:159
+#, fuzzy
+msgid "Please address the following requirements before proceeding with the upgrade:"
+msgstr "Corrigeer de volgende problemen voordat je verder gaat:"
+
+#: modules/install/controllers/CredentialsController.php:44
+msgid "We couldn't connect to the database using those credentials."
+msgstr ""
+
+#: modules/install/controllers/CredentialsController.php:45
+msgid "Please verify and try again."
+msgstr ""
+
+#: modules/install/controllers/CredentialsController.php:51
+#, php-format
+msgid "The connection to the database engine worked, but the database %s doesn't exist or the provided user doesn't have access to it. An attempt was made to create it, but the provided user doesn't have permissions to do so either. Please create it yourself and try again."
+msgstr ""
+
+#: modules/install/controllers/CredentialsController.php:230
+#, php-format
+msgid "PHP version %s or greater is required"
+msgstr ""
+
+#: modules/install/controllers/CredentialsController.php:234
+#, php-format
+msgid "The directory where Community-ID is installed must be writable by the web server user (%s). Another option is to create an EMPTY config.php file that is writable by that user."
+msgstr "De directory waar Community-ID geinstalleerd is moet schrijfbaar zijn voor de web server user (%s). Een andere mogelijkheid is om een LEEG config.php dat schrijfbaar is voor aan te maken."
+
+#: modules/install/controllers/CredentialsController.php:237
+#, php-format
+msgid "The directory \"captchas\" under the web directory for Community-ID must be writable by the web server user (%s)"
+msgstr "De directory \"captchas\" onder de web directory voor Community-ID moet schrijfbaar zijn voor de web server user (%s)"
+
+#: modules/install/controllers/CredentialsController.php:240
+#: modules/install/controllers/CredentialsController.php:243
+#: modules/install/controllers/CredentialsController.php:252
+#, php-format
+msgid "You need to have the %s extension installed"
+msgstr ""
+
+#: modules/install/controllers/CredentialsController.php:246
+msgid "You need to have <a href=\"http://www.php.net/manual/en/image.installation.php\">PNG support in your GD configuration</a>"
+msgstr ""
+
+#: modules/install/controllers/CredentialsController.php:249
+msgid "You need to have <a href=\"http://www.php.net/manual/en/image.installation.php\">Freetype support in your GD configuration</a>"
+msgstr ""
+
+#: javascript/language.php:30
+msgid "Name"
+msgstr "Naam"
+
+#: javascript/language.php:31
+msgid "Registration"
+msgstr "Registratie"
+
+#: javascript/language.php:32
+msgid "Status"
+msgstr "Status"
+
+#: javascript/language.php:33
+msgid "profile"
+msgstr "profiel"
+
+#: javascript/language.php:34
+msgid "delete"
+msgstr "verwijder"
+
+#: javascript/language.php:35
+msgid "Site"
+msgstr "Site"
+
+#: javascript/language.php:36
+msgid "view info exchanged"
+msgstr "bekijk uitgewisselde informatie"
+
+#: javascript/language.php:37
+msgid "deny"
+msgstr "weiger"
+
+#: javascript/language.php:38
+msgid "allow"
+msgstr "sta toe"
+
+#: javascript/language.php:39
+msgid "Are you sure you wish to send this message to ALL users?"
+msgstr "Weet je zeker dat je dit bericht aan ALLE gebruikers wilt verzenden?"
+
+#: javascript/language.php:40
+msgid "Are you sure you wish to deny trust to this site?"
+msgstr "Weet je zeker dat je geen vertrouwen aan deze site wilt toekennen?"
+
+#: javascript/language.php:41
+msgid "operation failed"
+msgstr "handeling mislukt"
+
+#: javascript/language.php:42
+msgid "Trust to the following site has been granted:"
+msgstr "Vertrouwen is aan de volgende site toegekend:"
+
+#: javascript/language.php:43
+msgid "Trust the following site has been denied:"
+msgstr "Vertrouwen is niet toegekend aan de volgende site:"
+
+#: javascript/language.php:44
+msgid "ERROR. The server returned:"
+msgstr "ERROR. De server meldt:"
+
+#: javascript/language.php:45
+msgid "Your relationship with the following site has been deleted:"
+msgstr "Je relatie met de volgende site is verwijderd:"
+
+#: javascript/language.php:46
+msgid "The history log has been cleared"
+msgstr "De historische logs zijn verwijderd"
+
+#: javascript/language.php:47
+msgid "Are you sure you wish to allow access to this site?"
+msgstr "Weet je zeker dat je toegang wilt geven aan deze site?"
+
+#: javascript/language.php:48
+msgid "Are you sure you wish to delete your relationship with this site?"
+msgstr "Weet je zeker dat je de relatie met deze site wilt verwijderen?"
+
+#: javascript/language.php:49
+msgid "Are you sure you wish to delete all the History Log?"
+msgstr "Weet je zeker dat je alle historische logs wilt verwijderen?"
+
+#: javascript/language.php:50
+msgid "Are you sure you wish to delete the user"
+msgstr "Weet je zeker dat je de gebruiker wilt verwijderen"
+
+#: javascript/language.php:51
+msgid "Are you sure you wish to delete all the unconfirmed accounts?"
+msgstr "Weet je zeker dat je alle onbevestigde accounts wilt verwijderen?"
+
+#: javascript/language.php:52
+msgid "Date"
+msgstr "Datum"
+
+#: javascript/language.php:53
+msgid "Result"
+msgstr "Resultaat"
+
+#: javascript/language.php:54
+msgid "No records found."
+msgstr "Geen resultaten gevonden."
+
+#: javascript/language.php:55
+msgid "Loading..."
+msgstr "Laden..."
+
+#: javascript/language.php:56
+msgid "Data error."
+msgstr "Data error."
+
+#: javascript/language.php:57
+msgid "Click to sort ascending"
+msgstr "Klik om oplopend te sorteren"
+
+#: javascript/language.php:58
+msgid "Click to sort descending"
+msgstr "Klik om aflopend te sorteren"
+
+#: javascript/language.php:59
+msgid "Authorized"
+msgstr "Toegestaan"
+
+#: javascript/language.php:60
+msgid "Denied"
+msgstr "Geweigerd"
+
+#: javascript/language.php:61
+msgid "of"
+msgstr "of"
+
+#: javascript/language.php:62
+msgid "next"
+msgstr "volgende"
+
+#: javascript/language.php:63
+msgid "prev"
+msgstr "vorige"
+
+#: javascript/language.php:64
+msgid "IP"
+msgstr "IP"
+
+#: javascript/language.php:65
+msgid "Delete unconfirmed accounts older than how many days?"
+msgstr ""
+
+#: javascript/language.php:66
+msgid "The value entered is incorrect"
+msgstr ""
+
+#: javascript/language.php:67
+msgid "Send reminder to accounts older than how many days?"
+msgstr ""
+
+#: javascript/language.php:68
+#, fuzzy
+msgid "Are you sure you wish to delete this article?"
+msgstr "Weet je zeker dat je de gebruiker wilt verwijderen"
+
+#: javascript/language.php:69
+#, fuzzy
+msgid "reminder"
+msgstr "Geslacht"
+
+#: javascript/language.php:70
+#, fuzzy
+msgid "reminders"
+msgstr "Geslacht"
+
+#: javascript/language.php:71
+#, fuzzy
+msgid "Are you sure you wish to delete this profile?"
+msgstr "Weet je zeker dat je de gebruiker wilt verwijderen"
+
+#: libs/Monkeys/Form/Element/Timezone.php:47
+msgid "-- Select a Timezone --"
+msgstr ""
+
+#: libs/Monkeys/Form/Element/Country.php:35
+msgid "-- Select a Country --"
+msgstr ""
+
+#: libs/Monkeys/Form/Element/Language.php:35
+msgid "-- Select a Language --"
+msgstr ""
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:266
+msgid "January"
+msgstr ""
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:267
+msgid "February"
+msgstr ""
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:268
+msgid "March"
+msgstr ""
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:269
+#, fuzzy
+msgid "April"
+msgstr "profiel"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:270
+msgid "May"
+msgstr ""
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:271
+msgid "June"
+msgstr ""
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:272
+msgid "July"
+msgstr ""
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:273
+msgid "August"
+msgstr ""
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:274
+#, fuzzy
+msgid "Septembre"
+msgstr "Onthoud mij"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:275
+msgid "October"
+msgstr ""
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:276
+msgid "November"
+msgstr ""
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:277
+#, fuzzy
+msgid "December"
+msgstr "Onthoud mij"
+
+#: plugins/stats/Authorizations.php:21
+msgid "Authorizations per day"
+msgstr "Autorisaties per dag"
+
+#: plugins/stats/Sites.php:21
+msgid "Trusted Sites"
+msgstr "vertrouwde sites"
+
+#: plugins/stats/Sites.php:77
+#: plugins/stats/Sites.php:81
+msgid "Trusted sites"
+msgstr "Vertrouwde sites"
+
+#: plugins/stats/Sites.php:78
+#: plugins/stats/Sites.php:82
+msgid "Sites per user"
+msgstr "Sites per gebruiker"
+
+#: plugins/stats/Top.php:21
+msgid "Top 10 Trusted Sites"
+msgstr "Top 10 vertrouwde sites"
+
+#: plugins/stats/Registrations.php:21
+msgid "Registrations per day"
+msgstr "Registraties per dag"
+
+#: modules/users/views/scripts/signinimage/index.phtml:1
+#: modules/users/views/scripts/login/index.phtml:14
+msgid "Sign-in Image"
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:8
+msgid "You haven't uploaded an image yet"
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:11
+msgid "Select an image to use as your Sign-in Image:"
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:15
+#: modules/users/views/scripts/personalinfo/edit.phtml:5
+msgid "Save"
+msgstr "Sla op"
+
+#: modules/users/views/scripts/signinimage/index.phtml:23
+msgid "This image will be shown in the log-in and OpenID authentication screens of Community-ID."
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:26
+msgid "It serves as a phishing counter-measure, as only you will recognize your image, proving these pages haven't been falsified."
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:29
+msgid "After having uploaded the image, for the it to be shown you need to enable it on each computer/browser you want to use (the system is cookie-based)."
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:34
+msgid "Use the following button to enable/disable it in the current computer/browser:"
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:39
+msgid "Disable"
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:42
+#, fuzzy
+msgid "Enable"
+msgstr "Man"
+
+#: modules/users/views/scripts/signinimage/index.phtml:51
+msgid "Further instructions will appear after you upload the image."
+msgstr ""
+
+#: modules/users/views/scripts/register/index.phtml:1
+msgid "Registration Form"
+msgstr "Registratieformulier"
+
+#: modules/users/views/scripts/register/index.phtml:10
+#: modules/users/views/scripts/recoverpassword/index.phtml:4
+msgid "Send"
+msgstr "Verstuur"
+
+#: modules/users/views/scripts/register/eula.phtml:1
+#, fuzzy
+msgid "Please read the following EULA in order to continue"
+msgstr "Corrigeer de volgende problemen voordat je verder gaat:"
+
+#: modules/users/views/scripts/register/eula.phtml:8
+msgid "I AGREE"
+msgstr ""
+
+#: modules/users/views/scripts/register/eula.phtml:9
+msgid "I DISAGREE"
+msgstr ""
+
+#: modules/users/views/scripts/login/index.phtml:3
+#, php-format
+msgid "Hello, %s"
+msgstr "Hallo, %s"
+
+#: modules/users/views/scripts/login/index.phtml:7
+msgid "Account"
+msgstr "Account"
+
+#: modules/users/views/scripts/login/index.phtml:11
+msgid "Personal Info"
+msgstr "Persoonlijke informatie"
+
+#: modules/users/views/scripts/login/index.phtml:17
+msgid "Sites database"
+msgstr "Sites database"
+
+#: modules/users/views/scripts/login/index.phtml:20
+msgid "History Log"
+msgstr "Historisch logs"
+
+#: modules/users/views/scripts/login/index.phtml:24
+msgid "Logout"
+msgstr "Uitloggen"
+
+#: modules/users/views/scripts/login/index.phtml:29
+msgid "Admin options"
+msgstr "Beheer options"
+
+#: modules/users/views/scripts/login/index.phtml:32
+msgid "Manage Users"
+msgstr "Beheer gebruikers"
+
+#: modules/users/views/scripts/login/index.phtml:35
+msgid "Message Users"
+msgstr "Stuur bericht aan gebruikers"
+
+#: modules/users/views/scripts/login/index.phtml:39
+msgid "Disable Maintenance Mode"
+msgstr "Schakel onderhoudsmodus uit"
+
+#: modules/users/views/scripts/login/index.phtml:41
+msgid "Enable Maintenance Mode"
+msgstr "Schakel onderhoudsmodus in"
+
+#: modules/users/views/scripts/login/index.phtml:45
+msgid "Statistics"
+msgstr "Statistieken"
+
+#: modules/users/views/scripts/login/index.phtml:48
+msgid "About Community-ID"
+msgstr ""
+
+#: modules/users/views/scripts/login/index.phtml:55
+msgid "User access is currently disabled for system maintenance.<br />Please try again later"
+msgstr "Gebruikerstoegang is momenteel niet mogelijk in verband met onderhoud.<br />Probeer het later opnieuw"
+
+#: modules/users/views/scripts/login/index.phtml:64
+#: modules/users/views/scripts/login/index.phtml:65
+msgid "This is the image that identifies your account in this computer"
+msgstr ""
+
+#: modules/users/views/scripts/login/index.phtml:82
+msgid "Remember me"
+msgstr "Onthoud mij"
+
+#: modules/users/views/scripts/login/index.phtml:85
+msgid "Log in"
+msgstr "Log in"
+
+#: modules/users/views/scripts/login/index.phtml:91
+#, fuzzy
+msgid "Forgot your password?"
+msgstr "Wachtwoord vergeten?"
+
+#: modules/users/views/scripts/login/index.phtml:98
+msgid "You don't have an account?"
+msgstr "Je hebt geen account?"
+
+#: modules/users/views/scripts/login/index.phtml:100
+msgid "REGISTER NOW!"
+msgstr "REGISTREER NU!"
+
+#: modules/users/views/scripts/recoverpassword/index.phtml:1
+msgid "Please enter your E-mail below to receive a link to reset your password"
+msgstr "Vul hieronder je E-mail adres in om een link te ontvangen voor het resetten van je wachtwoord"
+
+#: modules/users/views/scripts/manageusers/index.phtml:11
+msgid "Enter search string"
+msgstr ""
+
+#: modules/users/views/scripts/manageusers/index.phtml:12
+msgid "Go"
+msgstr ""
+
+#: modules/users/views/scripts/manageusers/index.phtml:13
+msgid "Clear"
+msgstr ""
+
+#: modules/users/views/scripts/manageusers/index.phtml:16
+msgid "All"
+msgstr "Allen"
+
+#: modules/users/views/scripts/manageusers/index.phtml:19
+msgid "Confirmed"
+msgstr "Bevestigd"
+
+#: modules/users/views/scripts/manageusers/index.phtml:22
+msgid "Unconfirmed"
+msgstr "Onbevestigd"
+
+#: modules/users/views/scripts/manageusers/index.phtml:29
+msgid "Total users:"
+msgstr "Totaal aantal gebruikers:"
+
+#: modules/users/views/scripts/manageusers/index.phtml:30
+msgid "Total confirmed users:"
+msgstr "Totaal aantal bevestigde gebruikers:"
+
+#: modules/users/views/scripts/manageusers/index.phtml:31
+msgid "Total unconfirmed users:"
+msgstr "Totaal aantal onbevestigde gebruikers:"
+
+#: modules/users/views/scripts/manageusers/index.phtml:34
+msgid "Add User"
+msgstr "Voeg gebruiker toe"
+
+#: modules/users/views/scripts/manageusers/index.phtml:36
+msgid "Delete Unconfirmed Users"
+msgstr "Verwijder onbevestigde gebruikers"
+
+#: modules/users/views/scripts/manageusers/index.phtml:39
+msgid "Send Reminder"
+msgstr ""
+
+#: modules/users/views/scripts/personalinfo/edit.phtml:6
+msgid "Cancel"
+msgstr "Cancel"
+
+#: modules/users/views/scripts/personalinfo/index.phtml:16
+msgid "This information will be used to automatically populate registration fields to any OpenID transaction that requires so"
+msgstr "Deze informatie zal gebruikt worden om automatisch registratievelden te vullen wanneer een OpenID transactie dat vereist"
+
+#: modules/users/views/scripts/personalinfo/index.phtml:23
+#, fuzzy
+msgid "Edit profile"
+msgstr "profiel"
+
+#: modules/users/views/scripts/personalinfo/index.phtml:29
+#, fuzzy
+msgid "Delete profile"
+msgstr "Verwijder account"
+
+#: modules/users/views/scripts/personalinfo/index.phtml:49
+msgid "Not Entered"
+msgstr "Niet ingevuld"
+
+#: modules/users/views/scripts/personalinfo/index.phtml:57
+msgid "Add another profile"
+msgstr ""
+
+#: modules/users/views/scripts/profilegeneral/accountinfo.phtml:28
+msgid "OpenID"
+msgstr "Open ID"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:3
+msgid "Why do you want to delete your Community-ID account?"
+msgstr "Waarom wil jij je Community-ID account verwijderen?"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:4
+msgid "Please check all that apply:"
+msgstr "Selecteer wat van toepassing is:"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:8
+msgid "This was just a test account"
+msgstr "Dit was alleen een test account"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:11
+msgid "I found a better service"
+msgstr "Ik heb een betere service gevonden"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:14
+msgid "Service lacked some key features I needed"
+msgstr "Aan de service ontbreekt functionaliteit waar ik niet buiten kan"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:17
+msgid "No particular reason"
+msgstr "Geen specifieke reden"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:20
+msgid "Additional comments:"
+msgstr "Aanvullende reakties:"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:22
+#: modules/users/views/scripts/profile/index.phtml:44
+msgid "Delete Account"
+msgstr "Verwijder account"
+
+#: modules/users/views/scripts/profile/index.phtml:13
+msgid "Account info"
+msgstr "Account informatie"
+
+#: modules/users/views/scripts/profile/index.phtml:18
+msgid "Edit"
+msgstr "Bewerk"
+
+#: modules/users/views/scripts/profile/index.phtml:24
+msgid "Change Password"
+msgstr "Wijzig wachtwoord"
+
+#: modules/default/views/scripts/index/index-en.phtml:39
+#: modules/default/views/scripts/index/index-sv.phtml:49
+#: modules/default/views/scripts/index/index-de.phtml:39
+#: modules/default/views/scripts/index/index-es.phtml:37
+msgid "There are no news articles yet"
+msgstr ""
+
+#: modules/default/views/scripts/index/index-en.phtml:46
+#: modules/default/views/scripts/index/index-sv.phtml:56
+#: modules/default/views/scripts/index/index-de.phtml:46
+#: modules/default/views/scripts/index/index-es.phtml:44
+msgid "View All"
+msgstr ""
+
+#: modules/default/views/scripts/index/index-en.phtml:50
+#: modules/default/views/scripts/index/index-sv.phtml:60
+#: modules/default/views/scripts/index/index-de.phtml:50
+#: modules/default/views/scripts/index/index-es.phtml:48
+msgid "Add New Article"
+msgstr ""
+
+#: modules/default/views/scripts/feedback/index.phtml:1
+msgid "In order to serve you better, we have provided the form below for your questions and comments"
+msgstr "Om je beter van dienst te kunnen zijn bieden wij je via onderstaand formulier de mogelijkheid om je vragen en opmerkingen kenbaar te maken"
+
+#: modules/default/views/scripts/identity/id.phtml:2
+msgid "This is the identity page for the Community-ID user identified with:"
+msgstr ""
+
+#: modules/default/views/scripts/messageusers/index.phtml:9
+msgid "This message will be sent to all registered Community-ID users"
+msgstr "Dit bericht zal aan alle geregistreerde Community-ID gebruikers vezonden worden"
+
+#: modules/default/views/scripts/messageusers/index.phtml:16
+msgid "switch to Plain-Text"
+msgstr "Schakel over naar platte tekst"
+
+#: modules/default/views/scripts/messageusers/index.phtml:19
+msgid "switch to Rich-Text (HTML)"
+msgstr "Schakel over naar HTML"
+
+#: modules/default/views/scripts/openid/trust.phtml:3
+#, php-format
+msgid "A site identifying as %s has asked for confirmation that %s is your identity URL."
+msgstr "Een site die zich identificeert als %s heeft gevraagd te bevestigen dat %s jouw identity URL is."
+
+#: modules/default/views/scripts/openid/trust.phtml:9
+msgid "It also requests this additional information about you:"
+msgstr "De site vroeg ook om de volgende extra informatie over jou:"
+
+#: modules/default/views/scripts/openid/trust.phtml:10
+#, fuzzy
+msgid "Fields are automatically filled according to the personal info stored in your community-id account."
+msgstr "(Velden worden automatisch gevuld op basis van de persoonlijke informatie die is opgeslagen in jouw community-id account)"
+
+#: modules/default/views/scripts/openid/trust.phtml:11
+#, fuzzy
+msgid "Fields marked with * are required."
+msgstr "(velden met een (*) zijn verplicht)"
+
+#: modules/default/views/scripts/openid/trust.phtml:16
+msgid "Please wait"
+msgstr ""
+
+#: modules/default/views/scripts/openid/trust.phtml:23
+msgid "Forever"
+msgstr "Altijd"
+
+#: modules/default/views/scripts/openid/trust.phtml:26
+msgid "Allow"
+msgstr "Sta toe"
+
+#: modules/default/views/scripts/openid/trust.phtml:27
+msgid "Deny"
+msgstr "Weiger"
+
+#: modules/default/views/scripts/openid/login.phtml:26
+msgid "Login"
+msgstr "Log in"
+
+#: modules/default/views/scripts/profile/index.phtml:5
+msgid "Please select the profile you want to use:"
+msgstr ""
+
+#: modules/default/views/scripts/profile/index.phtml:20
+#, fuzzy, php-format
+msgid "The privacy policy can be found at %s"
+msgstr "De privacy policy is te vinden op %s"
+
+#: modules/default/views/scripts/history/index.phtml:13
+msgid "Clear History"
+msgstr "Verwijder geschiedenis"
+
+#: modules/default/views/scripts/sites/index.phtml:15
+msgid "Information Exchanged"
+msgstr "Uitgewisselde informatie"
+
+#: modules/default/views/scripts/sites/index.phtml:17
+msgid "Information exchanged with:"
+msgstr "Information uitgewisseld met:"
+
+#: modules/default/views/scripts/sites/index.phtml:21
+msgid "OK"
+msgstr "OK"
+
+#: modules/default/views/scripts/cid/index.phtml:3
+msgid "Version installed:"
+msgstr ""
+
+#: modules/default/views/scripts/cid/index.phtml:8
+msgid "Latest news from Community-ID:"
+msgstr ""
+
+#: modules/news/views/scripts/index/pagination.phtml:10
+#: modules/news/views/scripts/index/pagination.phtml:13
+msgid "Previous"
+msgstr ""
+
+#: modules/news/views/scripts/index/pagination.phtml:30
+#: modules/news/views/scripts/index/pagination.phtml:33
+#, fuzzy
+msgid "Next"
+msgstr "volgende"
+
+#: modules/news/views/scripts/index/index.phtml:3
+msgid "Latest News"
+msgstr "Laatste Nieuws"
+
+#: modules/news/views/scripts/index/index.phtml:16
+#: modules/news/views/scripts/view/index.phtml:3
+#, php-format
+msgid "Published on %s"
+msgstr ""
+
+#: modules/news/views/scripts/index/index.phtml:21
+#, fuzzy
+msgid "read more"
+msgstr "Lees verder"
+
+#: modules/news/views/scripts/view/index.phtml:6
+msgid "Edit Article"
+msgstr ""
+
+#: modules/news/views/scripts/view/index.phtml:7
+#, fuzzy
+msgid "Delete Article"
+msgstr "Verwijder account"
+
+#: modules/install/views/scripts/index/index.phtml:2
+msgid "This Community-ID instance hasn't been installed yet"
+msgstr "Deze Community-ID instantie is nog niet geinstalleerd"
+
+#: modules/install/views/scripts/index/index.phtml:5
+msgid "Proceed with installation"
+msgstr "Ga verder met de installatie"
+
+#: modules/install/views/scripts/credentials/index.phtml:3
+msgid "Database and E-mail information"
+msgstr "Database en E-mail informatie"
+
+#: modules/install/views/scripts/credentials/index.phtml:13
+msgid "Administrator User Information"
+msgstr ""
+
+#: modules/install/views/scripts/permissions/index.phtml:2
+msgid "Please correct the following problems before proceeding:"
+msgstr "Corrigeer de volgende problemen voordat je verder gaat:"
+
+#: modules/install/views/scripts/permissions/index.phtml:10
+msgid "Check again"
+msgstr "Controleer nogmaals"
+
+#: modules/install/views/scripts/complete/index.phtml:2
+msgid "The installation was performed successfully"
+msgstr "De installatie is succesvol uitgevoerd"
+
+#: modules/install/views/scripts/complete/index.phtml:6
+msgid "You can login as the administrator with the username and password you just provided."
+msgstr ""
+
+#: modules/install/views/scripts/complete/index.phtml:7
+msgid "Please note that this user is only meant for administrative tasks, and cannot have an OpenID credential."
+msgstr ""
+
+#: modules/install/views/scripts/complete/index.phtml:10
+msgid "Finish"
+msgstr "Afmaken"
+
+#: modules/install/views/scripts/upgrade/index.phtml:1
+msgid "New version detected"
+msgstr ""
+
+#: modules/install/views/scripts/upgrade/index.phtml:3
+msgid "Enter the administrator credentials to proceed with the upgrade:"
+msgstr ""
+
+#: modules/install/views/scripts/upgrade/index.phtml:6
+msgid "Make sure you make a copy of the database before, just in case"
+msgstr ""
+
+#: views/layouts/layout.phtml:33
+#: views/layouts_monkeys/layout.phtml:33
+msgid "Home"
+msgstr "Home"
+
+#: views/layouts/layout.phtml:36
+#: views/layouts_monkeys/layout.phtml:36
+msgid "Feedback"
+msgstr "Feedback"
+
+#: views/layouts/layout.phtml:42
+#: views/layouts_monkeys/layout.phtml:45
+msgid "Your OpenID is:"
+msgstr ""
+
+#: views/layouts/layout.phtml:59
+#: views/layouts_monkeys/layout.phtml:62
+msgid "Maintenance mode is enabled: user access is restricted"
+msgstr "Onderhoudsmodus is actief: gebruikerstoegang is beperkt"
+
+#: views/layouts_monkeys/layout.phtml:39
+msgid "Help and Support"
+msgstr "Help en Support"
+
+#: views/layouts_monkeys/layout.phtml:82
+msgid "Privacy"
+msgstr "Privacy"
+
+#: views/layouts_monkeys/layout.phtml:85
+msgid "About Us"
+msgstr "Over ons"
+
+#: views/layouts_monkeys/layout.phtml:88
+msgid "Contact Us"
+msgstr "Neem contact op"
+
+#: plugins/stats/Sites.phtml:2
+msgid "Select view"
+msgstr "Selecteer weergave"
+
+#: plugins/stats/Sites.phtml:4
+msgid "Last Week"
+msgstr "Vorige week"
+
+#: plugins/stats/Sites.phtml:5
+msgid "Last Year"
+msgstr "Vorig jaar"
+
+#: plugins/stats/Top.phtml:6
+#, php-format
+msgid "%s users"
+msgstr "%s gebruikers"
+
+#: plugins/stats/Registrations.phtml:5
+msgid "Last Month"
+msgstr "Vorige maand"
+
+#~ msgid "Forgot you password?"
+#~ msgstr "Wachtwoord vergeten?"
+#~ msgid "Privacy Policy"
+#~ msgstr "Privacy Policy"
+#~ msgid "Body:"
+#~ msgstr "Inhoud:"
+#~ msgid "OPEN AN ACCOUNT NOW"
+#~ msgstr "MAAK NU EEN ACCOUNT AAN"
+#~ msgid "Username:"
+#~ msgstr "Gebruikersnaam:"
+#~ msgid "E-mail:"
+#~ msgstr "E-mail:"
+#~ msgid ""
+#~ "Fed up with having to remember dozens of<br />usernames and passwords<br /"
+#~ ">for your favorite websites?"
+#~ msgstr ""
+#~ "Heb je er genoeg van om <br />gebruikersnamen en wachtwoorden<br />voor "
+#~ "je favoriete websites te moeten onthouden?"
+#~ msgid "Starting today<br />you'll only have to remember one"
+#~ msgstr "Vanaf vandaag<br />hoef je er nog maar één te onthouden"
+#~ msgid "LOGIN"
+#~ msgstr "LOGIN"
+#~ msgid "LOG IN"
+#~ msgstr "LOG IN"
+

@@ -1,0 +1,25 @@
+<script>
+YAHOO.util.Event.onDOMReady(function () {
+    COMMID.loader.insert(
+        ["datasource", "datatable", "paginator", "json", "connection", "dragdrop", "animation", "container"],
+        COMMID.historyList.init,
+        COMMID.historyList
+    );
+});
+</script>
+<div id="paging"></div>
+<div id="dt"></div>
+<div id="clearHistory">
+    <input type="button" id="clearHistoryBtn" value="<?php echo $this->translate('Clear History') ?>" onclick="COMMID.historyList.clearEntries()" />
+    <script type="text/javascript">
+        YAHOO.util.Event.onDOMReady(function () {
+            var oButton = new YAHOO.widget.Button(
+                "clearHistoryBtn",
+                {
+                    type    : "push",
+                    onclick : {fn: COMMID.historyList.clearEntries, scope: COMMID.historyList}
+                }
+            );
+        });
+    </script>
+</div>

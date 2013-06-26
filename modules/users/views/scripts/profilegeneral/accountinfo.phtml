@@ -1,0 +1,48 @@
+<div class="formGrid">
+    <div class="yui-gf">
+        <div class="yui-u first">
+            <?php echo $this->translate('Username') ?>:
+        </div>
+        <div class="yui-u">
+            <?php echo $this->targetUser->username ?>
+        </div>
+    </div>
+    <div class="yui-gf">
+        <div class="yui-u first">
+            <?php echo $this->translate('Name') ?>:
+        </div>
+        <div class="yui-u">
+            <?php echo $this->targetUser->getfullName() ?>
+        </div>
+    </div>
+    <div class="yui-gf">
+        <div class="yui-u first">
+            <?php echo $this->translate('E-mail') ?>:
+        </div>
+        <div class="yui-u">
+            <?php echo $this->targetUser->email ?>
+        </div>
+    </div>
+    <div class="yui-gf">
+        <div class="yui-u first">
+            <?php echo $this->translate('OpenID') ?>:
+        </div>
+        <div class="yui-u">
+            <?php echo $this->targetUser->openid ?>
+        </div>
+    </div>
+    <? if ($this->yubikey->enabled && !$this->yubikey->force): ?>
+        <div class="yui-gf">
+            <div class="yui-u first">
+                <?php echo $this->translate('Auth Method') ?>:
+            </div>
+            <div class="yui-u">
+                <? if ($this->targetUser->auth_type == Users_Model_User::AUTH_PASSWORD): ?>
+                    <?= $this->translate('Password') ?>
+                <? else: ?>
+                    YubiKey
+                <? endif ?>
+            </div>
+        </div>
+    <? endif ?>
+</div>

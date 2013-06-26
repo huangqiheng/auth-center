@@ -1,0 +1,13 @@
+Gentile {userName},
+
+Non abbiamo ricevuto la conferma del suo account di community-id.org.
+
+Si prega di confermare l'account cliccando sul link seguente, viceversa tale account sarà cancellato nei prossimi giorni:
+
+{registrationURL}
+
+
+Grazie,
+Il team Community-ID
+
+Community-ID è un servizio di Keyboard Monkeys Ltd. (Community as a Service)

@@ -1,0 +1,53 @@
+<h2><?= $this->translate('Sign-in Image') ?></h2>
+<div style="text-align:center; margin:20px 0">
+<? if ($this->user->getImage()): ?>
+    <img src="<?= $this->base ?>/users/signinimage/image"
+        width="<?= $this->user->getImage()->getWidth() ?>"
+        height="<?= $this->user->getImage()->getHeight() ?>" />
+<? else: ?>
+    <?= $this->translate('You haven\'t uploaded an image yet') ?>
+<? endif ?>
+</div>
+<div><?= $this->translate('Select an image to use as your Sign-in Image:') ?></div>
+<form method="post" class="formGrid" style="margin:20px 0" action="<?= $this->base ?>/users/signinimage/saveimage" enctype="multipart/form-data">
+    <?= $this->signinImageForm->image ?>
+    <div style="text-align:right">
+        <input type="submit" id="save" class="submit" value="<?= $this->translate('Save') ?>" />
+        <script>
+            new YAHOO.widget.Button(
+                "save", {type: "submit"});
+        </script>
+    </div>
+</form>
+<p>
+    <?= $this->translate('This image will be shown in the log-in and OpenID authentication screens of Community-ID.') ?>
+</p>
+<p>
+    <?= $this->translate('It serves as a phishing counter-measure, as only you will recognize your image, proving these pages haven\'t been falsified.') ?>
+</p>
+<p style="font-weight:bold">
+    <?= $this->translate('After having uploaded the image, for the it to be shown you need to enable it on each computer/browser you want to use (the system is cookie-based).') ?>
+</p>
+
+<? if ($this->user->getImage()): ?>
+    <p>
+        <?= $this->translate('Use the following button to enable/disable it in the current computer/browser:') ?><br />
+    </p>
+    <form method="post" class="formGrid" style="text-align:center" action="<?= $this->base ?>/users/signinimage/setcookie">
+        <? if ($this->enabled): ?>
+            <input type="hidden" name="enable" value="0" />
+            <input type="submit" id="enable" value="<?= $this->translate('Disable') ?>" />
+        <? else: ?>
+            <input type="hidden" name="enable" value="1" />
+            <input type="submit" id="enable" value="<?= $this->translate('Enable') ?>" />
+        <? endif ?>
+        <script>
+            new YAHOO.widget.Button(
+                "enable", {type: "submit"});
+        </script>
+    </form>
+<? else: ?>
+<p>
+    <?= $this->translate('Further instructions will appear after you upload the image.') ?>
+</p>
+<? endif ?>

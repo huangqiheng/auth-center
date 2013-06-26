@@ -1,0 +1,15 @@
+<h2><?php echo $this->escape($this->article->title) ?></h2>
+<div class="article_date">
+    <?php echo $this->translate('Published on %s', $this->article->date) ?>
+    <?php if ($this->user->role == Users_Model_User::ROLE_ADMIN): ?>
+        <div class="linksTopRight">
+            <a href="<?php echo $this->base . '/news/edit/index/id/' . $this->article->id ?>"><?php echo $this->translate('Edit Article') ?></a>&nbsp;|&nbsp;
+            <a href="#" onclick="COMMID.editArticle.remove(<?php echo $this->article->id ?>);return false;"><?php echo $this->translate('Delete Article') ?></a>
+        </div>
+    <?php endif ?>
+</div>
+<p><?php echo $this->escape($this->article->excerpt) ?></p>
+<hr />
+<div>
+    <?php echo $this->article->content ?>
+</div>

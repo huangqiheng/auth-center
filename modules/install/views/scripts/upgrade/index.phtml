@@ -1,0 +1,15 @@
+<h2><?php echo $this->translate('New version detected') ?></h2>
+<div>
+    <?php echo $this->translate('Enter the administrator credentials to proceed with the upgrade:') ?>
+</div>
+<div>
+    <em><?php echo $this->translate('Make sure you make a copy of the database before, just in case') ?></em>
+</div>
+<form action="<?php echo $this->base ?>/install/upgrade/proceed" method="post" class="formGrid" style="margin-top:30px">
+    <?php echo $this->loginForm->username ?>
+    <?php echo $this->loginForm->password ?>
+    <input type="submit" id="send" value="<?php echo $this->translate('Send') ?>" />
+    <script type="text/javascript">
+        var oButton = new YAHOO.widget.Button("send");
+    </script> 
+</form>

@@ -1,0 +1,1319 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Community-ID Catalan translation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-05-26 11:15-0500\n"
+"PO-Revision-Date: 2010-05-26 11:15-0500\n"
+"Last-Translator: Keyboard Monkeys <projects@kb-m.com>\n"
+"Language-Team: Keyboard Monkeys Ltd. <alejandro@kb-m.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Catalan\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: translate\n"
+"X-Poedit-Basepath: ../../../\n"
+"X-Poedit-SearchPath-0: modules\n"
+"X-Poedit-SearchPath-1: views\n"
+"X-Poedit-SearchPath-2: javascript\n"
+"X-Poedit-SearchPath-3: libs/Monkeys\n"
+"X-Poedit-SearchPath-4: plugins\n"
+
+#: modules/users/forms/SigninImage.php:25
+msgid "Only files of type jpg, jpeg, png and gif are allowed.<br />Maximum size is 2 MB."
+msgstr ""
+
+#: modules/users/forms/AccountInfo.php:26
+#: modules/users/forms/Register.php:45
+msgid "Username"
+msgstr "Nom de usuari"
+
+#: modules/users/forms/AccountInfo.php:32
+#: modules/users/forms/Register.php:28
+msgid "First Name"
+msgstr "Nombre"
+
+#: modules/users/forms/AccountInfo.php:37
+#: modules/users/forms/Register.php:33
+msgid "Last Name"
+msgstr "Cognom1 i Cognom2"
+
+#: modules/users/forms/AccountInfo.php:42
+#: modules/users/forms/Register.php:38
+msgid "E-mail"
+msgstr "Correo electrónic"
+
+#: modules/users/forms/AccountInfo.php:49
+msgid "Auth Method"
+msgstr ""
+
+#: modules/users/forms/AccountInfo.php:56
+msgid "Associated YubiKey"
+msgstr ""
+
+#: modules/users/forms/AccountInfo.php:64
+#: modules/users/forms/ChangePassword.php:26
+msgid "Enter password"
+msgstr "Entri la contrasenya"
+
+#: modules/users/forms/AccountInfo.php:76
+#: modules/users/forms/Register.php:63
+#: modules/users/forms/ChangePassword.php:38
+#, fuzzy
+msgid "Enter password again"
+msgstr "Entri la contrasenya"
+
+#: modules/users/forms/PersonalInfo.php:65
+#, fuzzy
+msgid "Profile Name"
+msgstr "perfil"
+
+#: modules/users/forms/Login.php:18
+msgid "USERNAME"
+msgstr "NOM DE USUARI"
+
+#: modules/users/forms/Login.php:27
+msgid "PASSWORD"
+msgstr "CONTRASENYA"
+
+#: modules/users/forms/Register.php:51
+msgid "Enter desired password"
+msgstr "Entri la contrasenya que voldrà utilitzar"
+
+#: modules/users/forms/Register.php:68
+msgid "Please enter the text below"
+msgstr "Comprobació que és una persona: Si us plau entri aquest text"
+
+#: modules/users/models/User.php:129
+#, fuzzy
+msgid "Default profile"
+msgstr "perfil"
+
+#: modules/users/controllers/RegisterController.php:26
+msgid "Sorry, registrations are currently disabled"
+msgstr "Ho sentim molt, els nous registres estan actualmente deshabilitats"
+
+#: modules/users/controllers/RegisterController.php:59
+msgid "This username is already in use"
+msgstr "Aquest nom d'usuari ja esta sent utilitzat"
+
+#: modules/users/controllers/RegisterController.php:66
+msgid "This E-mail is already in use"
+msgstr "Aquest correu electrònic ja està sent utilitzat"
+
+#: modules/users/controllers/RegisterController.php:95
+msgid "Community-ID registration confirmation"
+msgstr "Community-ID confirmació del registre"
+
+#: modules/users/controllers/RegisterController.php:100
+msgid "Thank you."
+msgstr "Moltes Gràcies."
+
+#: modules/users/controllers/RegisterController.php:101
+msgid "You will receive an E-mail with instructions to activate the account."
+msgstr "Automàticament, reberà per correu electrònic a la seva bústia, les instruccions per a activar el seu compte."
+
+#: modules/users/controllers/RegisterController.php:104
+msgid "The confirmation E-mail could not be sent, so the account creation was cancelled. Please contact support."
+msgstr ""
+
+#: modules/users/controllers/RegisterController.php:106
+msgid "The account was created but the E-mail could not be sent"
+msgstr "El compte fou creada però el correu electrònic no ha pogut ser enviat"
+
+#: modules/users/controllers/RegisterController.php:123
+#: modules/users/controllers/RegisterController.php:141
+#: modules/users/controllers/RegisterController.php:156
+msgid "Invalid token"
+msgstr "Token (cadena de caràcters) invàlit"
+
+#: modules/users/controllers/RegisterController.php:147
+msgid "Your account has been deleted"
+msgstr "El seu compte ha estat esborrat"
+
+#: modules/users/controllers/LoginController.php:63
+#: modules/users/controllers/LoginController.php:97
+msgid "Invalid credentials"
+msgstr "Credencials invàlits"
+
+#: modules/users/controllers/SigninimageController.php:71
+msgid "There is no image uploaded"
+msgstr ""
+
+#: modules/users/controllers/SigninimageController.php:77
+#, fuzzy
+msgid "There was a problem setting the cookie"
+msgstr "S'ha produit un error a l'intentar d'enviar el missatge"
+
+#: modules/users/controllers/SigninimageController.php:82
+msgid "Image has been set successfully on this computer/browser"
+msgstr ""
+
+#: modules/users/controllers/SigninimageController.php:86
+msgid "Image has been disabled successfully on this computer/browser"
+msgstr ""
+
+#: modules/users/controllers/RecoverpasswordController.php:51
+msgid "This E-mail is not registered in the system"
+msgstr "Aquest correu electrònic no està registrat en el nostre sistema"
+
+#: modules/users/controllers/RecoverpasswordController.php:72
+#: modules/users/controllers/RecoverpasswordController.php:101
+msgid "Community-ID password reset"
+msgstr "Community-ID restablecimient de una nova contrasenya"
+
+#: modules/users/controllers/RecoverpasswordController.php:74
+msgid "Password reset E-mail has been sent"
+msgstr "El correu electrònic de restabliment de contrasenya ha sigut enviat"
+
+#: modules/users/controllers/RecoverpasswordController.php:83
+msgid "Wrong Token"
+msgstr "Token no vàlit"
+
+#: modules/users/controllers/RecoverpasswordController.php:103
+msgid "You'll receive your new password via E-mail"
+msgstr "Reberà la nova contrasenya per correu electrònic"
+
+#: modules/users/controllers/ProfilegeneralController.php:109
+msgid "Could not validate Yubikey"
+msgstr ""
+
+#: modules/users/controllers/ProfilegeneralController.php:301
+msgid "Account was deleted, but feedback form couldn't be sent to admins"
+msgstr "EL compte fou eliminat, però el formulari no ha pogut ser enviat al administradors"
+
+#: modules/users/controllers/ProfilegeneralController.php:315
+msgid "Your acccount has been successfully deleted"
+msgstr "La compte ha set esborrada amb èxit"
+
+#: modules/users/controllers/UserslistController.php:59
+msgid "admin"
+msgstr "admin"
+
+#: modules/users/controllers/UserslistController.php:61
+msgid "confirmed"
+msgstr "confirmat"
+
+#: modules/users/controllers/UserslistController.php:63
+msgid "unconfirmed"
+msgstr "no confirmat"
+
+#: modules/users/controllers/PersonalinfoController.php:87
+#, fuzzy
+msgid "Profile has been saved"
+msgstr "L'article no has sigut guardat."
+
+#: modules/users/controllers/PersonalinfoController.php:98
+#, fuzzy
+msgid "Profile has been deleted"
+msgstr "L'article ha sigut eliminat."
+
+#: modules/users/controllers/ManageusersController.php:31
+msgid "User has been deleted successfully"
+msgstr "L'usuari ha sigut esborrat amb èxit"
+
+#: modules/users/controllers/ManageusersController.php:48
+msgid "Community-ID registration reminder"
+msgstr "Community-ID recordatori de registre"
+
+#: modules/default/forms/MessageUsers.php:17
+msgid "Subject"
+msgstr "Asumpte"
+
+#: modules/default/forms/MessageUsers.php:22
+msgid "CC"
+msgstr "CC"
+
+#: modules/default/forms/OpenidLogin.php:28
+msgid "OpenID URL"
+msgstr "OpenID URL"
+
+#: modules/default/forms/OpenidLogin.php:35
+msgid "Password"
+msgstr "Contrasenya"
+
+#: modules/default/forms/Feedback.php:25
+msgid "Enter your name"
+msgstr "Entri/escrigui el seu nom"
+
+#: modules/default/forms/Feedback.php:30
+msgid "Enter your E-mail"
+msgstr "Entri/escrigui la seva bústia de correu electrònic"
+
+#: modules/default/forms/Feedback.php:37
+msgid "Enter your questions or comments"
+msgstr "Entri/escrigui les seves preguntes o comentaris"
+
+#: modules/default/forms/ErrorMessages.php:20
+msgid "Value is empty, but a non-empty value is required"
+msgstr "Es requereix un valor no buit"
+
+#: modules/default/forms/ErrorMessages.php:21
+msgid "Value is required and can't be empty"
+msgstr "El valor es requerit i no pot deixar-se buit"
+
+#: modules/default/forms/ErrorMessages.php:22
+msgid "'%value%' is not a valid email address in the basic format local-part@hostname"
+msgstr "'%value%' no és una bústia de correu electrònica vàlida"
+
+#: modules/default/forms/ErrorMessages.php:23
+msgid "'%hostname%' is not a valid hostname for email address '%value%'"
+msgstr "'%hostname%' no és un servidor de noms -hostname- vàlid per a la bústia de correu electrònic '%value%'"
+
+#: modules/default/forms/ErrorMessages.php:24
+msgid "'%value%' does not match the expected structure for a DNS hostname"
+msgstr "'%value%' no coincideix amb l'estructura esperada per a unes DNS dominis de un servidor de noms -hosstname DNS-"
+
+#: modules/default/forms/ErrorMessages.php:25
+msgid "'%value%' appears to be a DNS hostname but cannot match TLD against known list"
+msgstr "'%value%' sembla ser un servidor de noms - hostname DNS - pero no es pot trobal la TLD corresponent"
+
+#: modules/default/forms/ErrorMessages.php:26
+msgid "'%value%' appears to be a local network name but local network names are not allowed"
+msgstr "'%value%' sembla ser un nom de xarxa local però els noms de xarxes locals no són permessos"
+
+#: modules/default/forms/ErrorMessages.php:27
+msgid "Captcha value is wrong"
+msgstr "El valor del text està equivocat, si us torbni a probar-l'ho"
+
+#: modules/default/forms/ErrorMessages.php:28
+msgid "Password confirmation does not match"
+msgstr "Les contrasenyes no coincideixen"
+
+#: modules/default/forms/ErrorMessages.php:29
+msgid "Username can only contain US-ASCII alphanumeric characters, plus any of the symbols $-_.+!*'(), and \""
+msgstr "Nom d'usuari nomé pot tenir caracters alfanumèrics US-ASCII, i qualsevol dels simbolos $-_.+!*'(), y \""
+
+#: modules/default/forms/ErrorMessages.php:30
+msgid "Username is invalid"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:31
+msgid "The file '%value%' was not uploaded"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:32
+msgid "Password can't be a dictionary word"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:33
+msgid "Password can't contain the username"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:34
+msgid "Password must be longer than %minLength% characters"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:35
+msgid "Password must contain numbers"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:36
+msgid "Password must contain symbols"
+msgstr ""
+
+#: modules/default/forms/ErrorMessages.php:37
+msgid "Password needs to have lowercase and uppercase characters"
+msgstr ""
+
+#: modules/default/models/Field.php:39
+msgid "Male"
+msgstr "Home/Mascle"
+
+#: modules/default/models/Field.php:40
+msgid "Female"
+msgstr "Dona/Femella"
+
+#: modules/default/models/Fields.php:62
+msgid "Nickname"
+msgstr "Sobrenom"
+
+#: modules/default/models/Fields.php:64
+msgid "Full Name"
+msgstr "Nom Complert: nom, cognom1 i cognom2"
+
+#: modules/default/models/Fields.php:65
+msgid "Date of Birth"
+msgstr "Data de Naixement"
+
+#: modules/default/models/Fields.php:66
+msgid "Gender"
+msgstr "Gèner"
+
+#: modules/default/models/Fields.php:67
+msgid "Postal Code"
+msgstr "Codi Postal (CP)"
+
+#: modules/default/models/Fields.php:68
+msgid "Country"
+msgstr "País"
+
+#: modules/default/models/Fields.php:69
+msgid "Language"
+msgstr "Idioma"
+
+#: modules/default/models/Fields.php:70
+msgid "Time Zone"
+msgstr "Zona Horària"
+
+#: modules/default/controllers/MessageusersController.php:46
+msgid "CC field must be a comma-separated list of valid E-mails"
+msgstr "El camp CC ha de ser una llista de bústies de correu (E-mails) vàlides separades per comes"
+
+#: modules/default/controllers/MessageusersController.php:86
+msgid "Message has been sent"
+msgstr "El missatge ha sigut enviat"
+
+#: modules/default/controllers/MessageusersController.php:88
+msgid "There was an error trying to send the message"
+msgstr "S'ha produit un error a l'intentar d'enviar el missatge"
+
+#: modules/default/controllers/ErrorController.php:18
+msgid "The URL you entered is incorrect. Please correct and try again."
+msgstr "La URL introduida és incorrecta. Si us plau corregir-la i tornar-l'ho a probar."
+
+#: modules/default/controllers/ErrorController.php:21
+msgid "Access Denied - Maybe your session has expired? Try logging-in again."
+msgstr "Acces Denegat - Possiblemente la sessió ha expirat? Intenti-ho de nou."
+
+#: modules/default/controllers/FeedbackController.php:57
+msgid "Thank you for your interest. Your message has been routed."
+msgstr "Gràcies pel seu interès. El missatge ha sigut enviat."
+
+#: modules/default/controllers/FeedbackController.php:59
+msgid "Sorry, the feedback couldn't be delivered. Please try again later."
+msgstr "Ho sentim, però la resposta de confirmació no ha pogut ser enviada. Per favor intentiu de nou més tard."
+
+#: modules/default/controllers/CidController.php:29
+msgid "Could not retrieve news items"
+msgstr "No fou possible extreure les notícies"
+
+#: modules/default/controllers/CidController.php:47
+msgid "Read More"
+msgstr "Leguir més"
+
+#: modules/default/controllers/OpenidController.php:26
+msgid "Forbidden"
+msgstr "Prohibit"
+
+#: modules/news/forms/Article.php:18
+msgid "Title"
+msgstr "Títol"
+
+#: modules/news/forms/Article.php:24
+msgid "Publication date"
+msgstr "Data de publicació"
+
+#: modules/news/forms/Article.php:32
+msgid "Excerpt"
+msgstr "Extracte"
+
+#: modules/news/controllers/EditController.php:60
+#: modules/news/controllers/EditController.php:90
+msgid "The article doesn't exist."
+msgstr "L'article no existeix."
+
+#: modules/news/controllers/EditController.php:81
+msgid "The article has been saved."
+msgstr "L'article no has sigut guardat."
+
+#: modules/news/controllers/EditController.php:93
+msgid "The article has been deleted."
+msgstr "L'article ha sigut eliminat."
+
+#: modules/install/forms/Install.php:18
+msgid "Hostname"
+msgstr "Servidor de Noms -Hostname-"
+
+#: modules/install/forms/Install.php:19
+msgid "usually localhost"
+msgstr "normal i usualment localhost"
+
+#: modules/install/forms/Install.php:27
+msgid "Database name"
+msgstr "Nom base de dades"
+
+#: modules/install/forms/Install.php:34
+msgid "Database username"
+msgstr "Usuari base de dades"
+
+#: modules/install/forms/Install.php:40
+msgid "Database password"
+msgstr "Contrasenya de la base de dades"
+
+#: modules/install/forms/Install.php:44
+msgid "Support E-mail"
+msgstr "Bústia de Correu electrònic de suport"
+
+#: modules/install/forms/Install.php:45
+msgid "Will be used as the sender for any message sent by the system, and as the recipient for user feedback"
+msgstr "Serà usat com el remitent en qualsevol missatge enviat pel sistema, i com recipient per a la resposta de confirmació dels usuaris"
+
+#: modules/install/controllers/UpgradeController.php:80
+#, php-format
+msgid "Upgrade was successful. You are now on version %s"
+msgstr "L'actualizació ha sigut realitzada amb éxit. Ara es troba en la versió %s"
+
+#: modules/install/controllers/UpgradeController.php:84
+#, php-format
+msgid "WARNING: there are some new configuration settings. To override their default values (as set in config.default.php) add them to your config.php file. The new settings correspond to the following directives: %s."
+msgstr ""
+
+#: modules/install/controllers/UpgradeController.php:117
+#, php-format
+msgid "Correct before upgrading: File %s is required to proceed"
+msgstr "Corrija antes de hacer la actualizació: El archivo %s es requerido per a proceder"
+
+#: modules/install/controllers/UpgradeController.php:159
+#, fuzzy
+msgid "Please address the following requirements before proceeding with the upgrade:"
+msgstr "Si us plau corregir els següents problemes abans de procedir:"
+
+#: modules/install/controllers/CredentialsController.php:44
+msgid "We couldn't connect to the database using those credentials."
+msgstr "No fue posible conectarse a la base de datos usando esas credenciales."
+
+#: modules/install/controllers/CredentialsController.php:45
+msgid "Please verify and try again."
+msgstr "Por favor verifique e intente de nuevo."
+
+#: modules/install/controllers/CredentialsController.php:51
+#, php-format
+msgid "The connection to the database engine worked, but the database %s doesn't exist or the provided user doesn't have access to it. An attempt was made to create it, but the provided user doesn't have permissions to do so either. Please create it yourself and try again."
+msgstr "La conexió al motor de base de datos funcionÃ³, pero la base de datos %s no existe o el usuari no tiene acceso a ella. Se intentÃ³ crearla, pero el usuari tampoco tiene permisos. Por favor creÃ©la manualmente e intente de nuevo."
+
+#: modules/install/controllers/CredentialsController.php:230
+#, php-format
+msgid "PHP version %s or greater is required"
+msgstr "Se requiere una version de PHP %s o mayor"
+
+#: modules/install/controllers/CredentialsController.php:234
+#, php-format
+msgid "The directory where Community-ID is installed must be writable by the web server user (%s). Another option is to create an EMPTY config.php file that is writable by that user."
+msgstr "El directorio donde Community-ID està instalado debe ser escribible por el usuari del servidor web (%s). Otra opció es create un archivo config.php VACIO que sea escribible por dicho usuari."
+
+#: modules/install/controllers/CredentialsController.php:237
+#, php-format
+msgid "The directory \"captchas\" under the web directory for Community-ID must be writable by the web server user (%s)"
+msgstr "El directorio \"catpchas\" debajo del directorio web de Community-ID debe ser escribible por el usuari del servidor web (%s)"
+
+#: modules/install/controllers/CredentialsController.php:240
+#: modules/install/controllers/CredentialsController.php:243
+#: modules/install/controllers/CredentialsController.php:252
+#, php-format
+msgid "You need to have the %s extension installed"
+msgstr "Necesita tener la extensió %s instalada"
+
+#: modules/install/controllers/CredentialsController.php:246
+msgid "You need to have <a href=\"http://www.php.net/manual/en/image.installation.php\">PNG support in your GD configuration</a>"
+msgstr "Necesita tener <a href=\"http://www.php.net/manual/en/image.installation.php\">soporte per a PNG en su configuració de GD</a>"
+
+#: modules/install/controllers/CredentialsController.php:249
+msgid "You need to have <a href=\"http://www.php.net/manual/en/image.installation.php\">Freetype support in your GD configuration</a>"
+msgstr "Necesita tener <a href=\"http://www.php.net/manual/en/image.installation.php\">soporte per a Freetype en su configuració de GD</a>"
+
+#: javascript/language.php:30
+msgid "Name"
+msgstr "Nombre"
+
+#: javascript/language.php:31
+msgid "Registration"
+msgstr "Registro"
+
+#: javascript/language.php:32
+msgid "Status"
+msgstr "Estado"
+
+#: javascript/language.php:33
+msgid "profile"
+msgstr "perfil"
+
+#: javascript/language.php:34
+msgid "delete"
+msgstr "eliminar"
+
+#: javascript/language.php:35
+msgid "Site"
+msgstr "Sitio"
+
+#: javascript/language.php:36
+msgid "view info exchanged"
+msgstr "ver informació intercambiada"
+
+#: javascript/language.php:37
+msgid "deny"
+msgstr "denegar"
+
+#: javascript/language.php:38
+msgid "allow"
+msgstr "permitir"
+
+#: javascript/language.php:39
+msgid "Are you sure you wish to send this message to ALL users?"
+msgstr "Â¿Està seguro de querer enviar este mensaje a TODOS los usuaris?"
+
+#: javascript/language.php:40
+msgid "Are you sure you wish to deny trust to this site?"
+msgstr "Â¿Està seguro de querer denegar este sitio?"
+
+#: javascript/language.php:41
+msgid "operation failed"
+msgstr "la operació ha fallado"
+
+#: javascript/language.php:42
+msgid "Trust to the following site has been granted:"
+msgstr "Confianza per a el siguiente sitio ha sido otorgada:"
+
+#: javascript/language.php:43
+msgid "Trust the following site has been denied:"
+msgstr "Confianza per a el siguiente sitio ha sido denegada:"
+
+#: javascript/language.php:44
+msgid "ERROR. The server returned:"
+msgstr "ERROR. El servidor retornÃ³:"
+
+#: javascript/language.php:45
+msgid "Your relationship with the following site has been deleted:"
+msgstr "Su relació con el siguiente sitio has sido eliminada:"
+
+#: javascript/language.php:46
+msgid "The history log has been cleared"
+msgstr "El historial ha sido borrado"
+
+#: javascript/language.php:47
+msgid "Are you sure you wish to allow access to this site?"
+msgstr "Â¿Està seguro de querer otorgar acceso a este sitio?"
+
+#: javascript/language.php:48
+msgid "Are you sure you wish to delete your relationship with this site?"
+msgstr "Â¿Està seguro de querer elimiar su relació con este sitio?"
+
+#: javascript/language.php:49
+msgid "Are you sure you wish to delete all the History Log?"
+msgstr "Â¿Està seguro de querer borrar todo el historial?"
+
+#: javascript/language.php:50
+msgid "Are you sure you wish to delete the user"
+msgstr "Està seguro de querer eliminar el usuari"
+
+#: javascript/language.php:51
+msgid "Are you sure you wish to delete all the unconfirmed accounts?"
+msgstr "Â¿Està seguro de querer eliminar todas las cuentas no confirmatas?"
+
+#: javascript/language.php:52
+msgid "Date"
+msgstr "Fecha"
+
+#: javascript/language.php:53
+msgid "Result"
+msgstr "Resultado"
+
+#: javascript/language.php:54
+msgid "No records found."
+msgstr "No se encontraron registros."
+
+#: javascript/language.php:55
+msgid "Loading..."
+msgstr "Cargando..."
+
+#: javascript/language.php:56
+msgid "Data error."
+msgstr "Error de datos."
+
+#: javascript/language.php:57
+msgid "Click to sort ascending"
+msgstr "Haga click per a ordenar ascendentemente"
+
+#: javascript/language.php:58
+msgid "Click to sort descending"
+msgstr "Haga click per a ordenar descendentemente"
+
+#: javascript/language.php:59
+msgid "Authorized"
+msgstr "Autorizado"
+
+#: javascript/language.php:60
+msgid "Denied"
+msgstr "Denegado"
+
+#: javascript/language.php:61
+msgid "of"
+msgstr "de"
+
+#: javascript/language.php:62
+msgid "next"
+msgstr "sig"
+
+#: javascript/language.php:63
+msgid "prev"
+msgstr "ant"
+
+#: javascript/language.php:64
+msgid "IP"
+msgstr "IP"
+
+#: javascript/language.php:65
+msgid "Delete unconfirmed accounts older than how many days?"
+msgstr "Â¿Eliminar cuentas sin confirmar màs antiguas que cuantos dÃ­as?"
+
+#: javascript/language.php:66
+msgid "The value entered is incorrect"
+msgstr "El valor ingresado no es correcto"
+
+#: javascript/language.php:67
+msgid "Send reminder to accounts older than how many days?"
+msgstr "Â¿Enviar recordatorio a cuentas màs antiguas que cuantos dÃ­as?"
+
+#: javascript/language.php:68
+msgid "Are you sure you wish to delete this article?"
+msgstr "Â¿Està seguro de querer eliminar este artÃ­culo?"
+
+#: javascript/language.php:69
+msgid "reminder"
+msgstr "recordatorio"
+
+#: javascript/language.php:70
+msgid "reminders"
+msgstr "recordatorios"
+
+#: javascript/language.php:71
+#, fuzzy
+msgid "Are you sure you wish to delete this profile?"
+msgstr "Â¿Està seguro de querer eliminar este artÃ­culo?"
+
+#: libs/Monkeys/Form/Element/Timezone.php:47
+msgid "-- Select a Timezone --"
+msgstr "-- Seleccione una zona horaria --"
+
+#: libs/Monkeys/Form/Element/Country.php:35
+msgid "-- Select a Country --"
+msgstr "-- Seleccione un PaÃ­s --"
+
+#: libs/Monkeys/Form/Element/Language.php:35
+msgid "-- Select a Language --"
+msgstr "-- Seleccione un Idioma --"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:266
+msgid "January"
+msgstr "Enero"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:267
+msgid "February"
+msgstr "Febrero"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:268
+msgid "March"
+msgstr "Marzo"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:269
+msgid "April"
+msgstr "Abrilperfil"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:270
+msgid "May"
+msgstr "Mayo"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:271
+msgid "June"
+msgstr "Junio"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:272
+msgid "July"
+msgstr "Julio"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:273
+msgid "August"
+msgstr "Agosto"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:274
+msgid "Septembre"
+msgstr "Septiembre"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:275
+msgid "October"
+msgstr "Octubre"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:276
+msgid "November"
+msgstr "Noviembre"
+
+#: libs/Monkeys/View/Helper/FormDateSelects.php:277
+msgid "December"
+msgstr "Diciembre"
+
+#: plugins/stats/Authorizations.php:21
+msgid "Authorizations per day"
+msgstr "Autoritzacions per dia"
+
+#: plugins/stats/Sites.php:21
+msgid "Trusted Sites"
+msgstr "Llocs de confiança"
+
+#: plugins/stats/Sites.php:77
+#: plugins/stats/Sites.php:81
+msgid "Trusted sites"
+msgstr "Lloc de confiança"
+
+#: plugins/stats/Sites.php:78
+#: plugins/stats/Sites.php:82
+msgid "Sites per user"
+msgstr "Llocs d'usuaris"
+
+#: plugins/stats/Top.php:21
+msgid "Top 10 Trusted Sites"
+msgstr "Primers 10 Llocs de Confiança"
+
+#: plugins/stats/Registrations.php:21
+msgid "Registrations per day"
+msgstr "Registres por dia"
+
+#: modules/users/views/scripts/signinimage/index.phtml:1
+#: modules/users/views/scripts/login/index.phtml:14
+msgid "Sign-in Image"
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:8
+msgid "You haven't uploaded an image yet"
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:11
+msgid "Select an image to use as your Sign-in Image:"
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:15
+#: modules/users/views/scripts/personalinfo/edit.phtml:5
+msgid "Save"
+msgstr "Guardar"
+
+#: modules/users/views/scripts/signinimage/index.phtml:23
+msgid "This image will be shown in the log-in and OpenID authentication screens of Community-ID."
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:26
+msgid "It serves as a phishing counter-measure, as only you will recognize your image, proving these pages haven't been falsified."
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:29
+msgid "After having uploaded the image, for the it to be shown you need to enable it on each computer/browser you want to use (the system is cookie-based)."
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:34
+msgid "Use the following button to enable/disable it in the current computer/browser:"
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:39
+msgid "Disable"
+msgstr ""
+
+#: modules/users/views/scripts/signinimage/index.phtml:42
+#, fuzzy
+msgid "Enable"
+msgstr "Home/Mascle"
+
+#: modules/users/views/scripts/signinimage/index.phtml:51
+msgid "Further instructions will appear after you upload the image."
+msgstr ""
+
+#: modules/users/views/scripts/register/index.phtml:1
+msgid "Registration Form"
+msgstr "Formulari de Registre"
+
+#: modules/users/views/scripts/register/index.phtml:10
+#: modules/users/views/scripts/recoverpassword/index.phtml:4
+msgid "Send"
+msgstr "Enviar"
+
+#: modules/users/views/scripts/register/eula.phtml:1
+msgid "Please read the following EULA in order to continue"
+msgstr "Si us plau llegir els següients termes d'ús per a continuar"
+
+#: modules/users/views/scripts/register/eula.phtml:8
+msgid "I AGREE"
+msgstr "DE ACUERDO"
+
+#: modules/users/views/scripts/register/eula.phtml:9
+msgid "I DISAGREE"
+msgstr "EN DESACUERDO"
+
+#: modules/users/views/scripts/login/index.phtml:3
+#, php-format
+msgid "Hello, %s"
+msgstr "Hola, %s"
+
+#: modules/users/views/scripts/login/index.phtml:7
+msgid "Account"
+msgstr "El Compte"
+
+#: modules/users/views/scripts/login/index.phtml:11
+msgid "Personal Info"
+msgstr "Informació Personal"
+
+#: modules/users/views/scripts/login/index.phtml:17
+msgid "Sites database"
+msgstr "Base de dades de llocs"
+
+#: modules/users/views/scripts/login/index.phtml:20
+msgid "History Log"
+msgstr "Historial"
+
+#: modules/users/views/scripts/login/index.phtml:24
+msgid "Logout"
+msgstr "Sortit"
+
+#: modules/users/views/scripts/login/index.phtml:29
+msgid "Admin options"
+msgstr "Opcions d'Adminstració"
+
+#: modules/users/views/scripts/login/index.phtml:32
+msgid "Manage Users"
+msgstr "Gestionar Usuaris"
+
+#: modules/users/views/scripts/login/index.phtml:35
+msgid "Message Users"
+msgstr "Enviar Middatges a usuaris"
+
+#: modules/users/views/scripts/login/index.phtml:39
+msgid "Disable Maintenance Mode"
+msgstr "Deshabilitar Modus de Manteniment"
+
+#: modules/users/views/scripts/login/index.phtml:41
+msgid "Enable Maintenance Mode"
+msgstr "Habilitar Modus de Manteniment"
+
+#: modules/users/views/scripts/login/index.phtml:45
+msgid "Statistics"
+msgstr "Estadísticas"
+
+#: modules/users/views/scripts/login/index.phtml:48
+msgid "About Community-ID"
+msgstr "Sobre Community-ID"
+
+#: modules/users/views/scripts/login/index.phtml:55
+msgid "User access is currently disabled for system maintenance.<br />Please try again later"
+msgstr "L'acces està actualment deshabilitat degut a manteniment del sistema.<br />Si us plau intente més endavant"
+
+#: modules/users/views/scripts/login/index.phtml:64
+#: modules/users/views/scripts/login/index.phtml:65
+msgid "This is the image that identifies your account in this computer"
+msgstr ""
+
+#: modules/users/views/scripts/login/index.phtml:82
+msgid "Remember me"
+msgstr "Recordar-me"
+
+#: modules/users/views/scripts/login/index.phtml:85
+msgid "Log in"
+msgstr "Ingresar"
+
+#: modules/users/views/scripts/login/index.phtml:91
+msgid "Forgot your password?"
+msgstr "S'ha oblidat de la contrasenya?"
+
+#: modules/users/views/scripts/login/index.phtml:98
+msgid "You don't have an account?"
+msgstr "No teniu un compte?"
+
+#: modules/users/views/scripts/login/index.phtml:100
+msgid "REGISTER NOW!"
+msgstr "REGISTREU-VOS ARA!"
+
+#: modules/users/views/scripts/recoverpassword/index.phtml:1
+msgid "Please enter your E-mail below to receive a link to reset your password"
+msgstr "Si us plau introdueixi/escrigui la seva bústia de correu electrònic per a rebre l'enlaç per a restablir la seva contrasenya"
+
+#: modules/users/views/scripts/manageusers/index.phtml:11
+msgid "Enter search string"
+msgstr "Entri/escrigui la cadena de búsqueda"
+
+#: modules/users/views/scripts/manageusers/index.phtml:12
+msgid "Go"
+msgstr "Ir"
+
+#: modules/users/views/scripts/manageusers/index.phtml:13
+msgid "Clear"
+msgstr "Esborrar"
+
+#: modules/users/views/scripts/manageusers/index.phtml:16
+msgid "All"
+msgstr "Tots"
+
+#: modules/users/views/scripts/manageusers/index.phtml:19
+msgid "Confirmed"
+msgstr "Confirmats"
+
+#: modules/users/views/scripts/manageusers/index.phtml:22
+msgid "Unconfirmed"
+msgstr "No confirmats"
+
+#: modules/users/views/scripts/manageusers/index.phtml:29
+msgid "Total users:"
+msgstr "Total usuaris:"
+
+#: modules/users/views/scripts/manageusers/index.phtml:30
+msgid "Total confirmed users:"
+msgstr "Total usuaris confirmatos:"
+
+#: modules/users/views/scripts/manageusers/index.phtml:31
+msgid "Total unconfirmed users:"
+msgstr "Total usuaris no confirmats:"
+
+#: modules/users/views/scripts/manageusers/index.phtml:34
+msgid "Add User"
+msgstr "Agregar usuari"
+
+#: modules/users/views/scripts/manageusers/index.phtml:36
+msgid "Delete Unconfirmed Users"
+msgstr "Eliminar usuaris no confirmats"
+
+#: modules/users/views/scripts/manageusers/index.phtml:39
+msgid "Send Reminder"
+msgstr "Enviar Recordatorio"
+
+#: modules/users/views/scripts/personalinfo/edit.phtml:6
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: modules/users/views/scripts/personalinfo/index.phtml:16
+msgid "This information will be used to automatically populate registration fields to any OpenID transaction that requires so"
+msgstr "Esta informació serà utilitzada automàticamente per a omplir els camps de registre en qualsevol transacció OpenID que ho requereixi"
+
+#: modules/users/views/scripts/personalinfo/index.phtml:23
+#, fuzzy
+msgid "Edit profile"
+msgstr "Editar Article"
+
+#: modules/users/views/scripts/personalinfo/index.phtml:29
+#, fuzzy
+msgid "Delete profile"
+msgstr "Eliminar ArtÃ­culo"
+
+#: modules/users/views/scripts/personalinfo/index.phtml:49
+msgid "Not Entered"
+msgstr "No Ingresat"
+
+#: modules/users/views/scripts/personalinfo/index.phtml:57
+msgid "Add another profile"
+msgstr ""
+
+#: modules/users/views/scripts/profilegeneral/accountinfo.phtml:28
+msgid "OpenID"
+msgstr "OpenID"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:3
+msgid "Why do you want to delete your Community-ID account?"
+msgstr "Per que desitja eliminar el seu compte de Community-ID?"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:4
+msgid "Please check all that apply:"
+msgstr "Si us plau verifiqui tot el que aplica:"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:8
+msgid "This was just a test account"
+msgstr "Això era només una compte de prova"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:11
+msgid "I found a better service"
+msgstr "Trobat un altre servei millor"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:14
+msgid "Service lacked some key features I needed"
+msgstr "El servei no té les funcionalitats clau que requereixo"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:17
+msgid "No particular reason"
+msgstr "Cap raó en particular"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:20
+msgid "Additional comments:"
+msgstr "Comentaris adicionals:"
+
+#: modules/users/views/scripts/profilegeneral/confirmdelete.phtml:22
+#: modules/users/views/scripts/profile/index.phtml:44
+msgid "Delete Account"
+msgstr "Eliminar el Compte"
+
+#: modules/users/views/scripts/profile/index.phtml:13
+msgid "Account info"
+msgstr "Informació del Compte"
+
+#: modules/users/views/scripts/profile/index.phtml:18
+msgid "Edit"
+msgstr "Editar"
+
+#: modules/users/views/scripts/profile/index.phtml:24
+msgid "Change Password"
+msgstr "Canviar contrasenya"
+
+#: modules/default/views/scripts/index/index-en.phtml:39
+#: modules/default/views/scripts/index/index-sv.phtml:49
+#: modules/default/views/scripts/index/index-de.phtml:39
+#: modules/default/views/scripts/index/index-es.phtml:37
+msgid "There are no news articles yet"
+msgstr "No hi han encara artícles"
+
+#: modules/default/views/scripts/index/index-en.phtml:46
+#: modules/default/views/scripts/index/index-sv.phtml:56
+#: modules/default/views/scripts/index/index-de.phtml:46
+#: modules/default/views/scripts/index/index-es.phtml:44
+msgid "View All"
+msgstr "Veure Tots"
+
+#: modules/default/views/scripts/index/index-en.phtml:50
+#: modules/default/views/scripts/index/index-sv.phtml:60
+#: modules/default/views/scripts/index/index-de.phtml:50
+#: modules/default/views/scripts/index/index-es.phtml:48
+msgid "Add New Article"
+msgstr "Afegir un nou Article"
+
+#: modules/default/views/scripts/feedback/index.phtml:1
+msgid "In order to serve you better, we have provided the form below for your questions and comments"
+msgstr "per a millorar els servei, hem creat aquest formulari per a conèixer les seves preguntes i comentaris"
+
+#: modules/default/views/scripts/identity/id.phtml:2
+msgid "This is the identity page for the Community-ID user identified with:"
+msgstr "Esta és la seva pàgina d'identitat per a el usuari de Community-ID identificat com:"
+
+#: modules/default/views/scripts/messageusers/index.phtml:9
+msgid "This message will be sent to all registered Community-ID users"
+msgstr "Aquest missatge serà enviat a tots els usuaris registrats de Community-ID"
+
+#: modules/default/views/scripts/messageusers/index.phtml:16
+msgid "switch to Plain-Text"
+msgstr "canviar a text plà"
+
+#: modules/default/views/scripts/messageusers/index.phtml:19
+msgid "switch to Rich-Text (HTML)"
+msgstr "canviar a text enriquit (HTML)"
+
+#: modules/default/views/scripts/openid/trust.phtml:3
+#, php-format
+msgid "A site identifying as %s has asked for confirmation that %s is your identity URL."
+msgstr "Un lloc identificat com %s a pedut la confirmació de que %s és la URL de la seva identitat"
+
+#: modules/default/views/scripts/openid/trust.phtml:9
+msgid "It also requests this additional information about you:"
+msgstr "Adicionalment, també es requereix la següent informació:"
+
+#: modules/default/views/scripts/openid/trust.phtml:10
+msgid "Fields are automatically filled according to the personal info stored in your community-id account."
+msgstr "Los campos son automaticamente llenados de acuerdo con la informació personal guardada en su cuenta de community-id."
+
+#: modules/default/views/scripts/openid/trust.phtml:11
+msgid "Fields marked with * are required."
+msgstr "Los campos marcados con * son requeridos"
+
+#: modules/default/views/scripts/openid/trust.phtml:16
+msgid "Please wait"
+msgstr ""
+
+#: modules/default/views/scripts/openid/trust.phtml:23
+msgid "Forever"
+msgstr "per a sempre"
+
+#: modules/default/views/scripts/openid/trust.phtml:26
+msgid "Allow"
+msgstr "Permetre"
+
+#: modules/default/views/scripts/openid/trust.phtml:27
+msgid "Deny"
+msgstr "Denegar"
+
+#: modules/default/views/scripts/openid/login.phtml:26
+msgid "Login"
+msgstr "Ingresar"
+
+#: modules/default/views/scripts/profile/index.phtml:5
+msgid "Please select the profile you want to use:"
+msgstr ""
+
+#: modules/default/views/scripts/profile/index.phtml:20
+#, php-format
+msgid "The privacy policy can be found at %s"
+msgstr "La política de privesa és disponible a %s"
+
+#: modules/default/views/scripts/history/index.phtml:13
+msgid "Clear History"
+msgstr "Esborrar Historial"
+
+#: modules/default/views/scripts/sites/index.phtml:15
+msgid "Information Exchanged"
+msgstr "Informació Intercanviada"
+
+#: modules/default/views/scripts/sites/index.phtml:17
+msgid "Information exchanged with:"
+msgstr "Informació intercanviada amb:"
+
+#: modules/default/views/scripts/sites/index.phtml:21
+msgid "OK"
+msgstr "D'acord, correcte i bé"
+
+#: modules/default/views/scripts/cid/index.phtml:3
+msgid "Version installed:"
+msgstr "Versió instal·lada:"
+
+#: modules/default/views/scripts/cid/index.phtml:8
+msgid "Latest news from Community-ID:"
+msgstr "Últimas notícies de Community-ID:"
+
+#: modules/news/views/scripts/index/pagination.phtml:10
+#: modules/news/views/scripts/index/pagination.phtml:13
+msgid "Previous"
+msgstr "Anterior"
+
+#: modules/news/views/scripts/index/pagination.phtml:30
+#: modules/news/views/scripts/index/pagination.phtml:33
+msgid "Next"
+msgstr "Següent"
+
+#: modules/news/views/scripts/index/index.phtml:3
+msgid "Latest News"
+msgstr "Últimes Notícies"
+
+#: modules/news/views/scripts/index/index.phtml:16
+#: modules/news/views/scripts/view/index.phtml:3
+#, php-format
+msgid "Published on %s"
+msgstr "Publicat en %s"
+
+#: modules/news/views/scripts/index/index.phtml:21
+msgid "read more"
+msgstr "llgir més"
+
+#: modules/news/views/scripts/view/index.phtml:6
+msgid "Edit Article"
+msgstr "Editar Article"
+
+#: modules/news/views/scripts/view/index.phtml:7
+msgid "Delete Article"
+msgstr "Eliminar ArtÃ­culo"
+
+#: modules/install/views/scripts/index/index.phtml:2
+msgid "This Community-ID instance hasn't been installed yet"
+msgstr "Esta instancia de Community-ID no ha sido instalada aÃºn"
+
+#: modules/install/views/scripts/index/index.phtml:5
+msgid "Proceed with installation"
+msgstr "Procedir amb la instal·lació"
+
+#: modules/install/views/scripts/credentials/index.phtml:3
+msgid "Database and E-mail information"
+msgstr "Informació de la base de dades i bústia de correu electrònic"
+
+#: modules/install/views/scripts/credentials/index.phtml:13
+msgid "Administrator User Information"
+msgstr "Informació del usuari Administrador"
+
+#: modules/install/views/scripts/permissions/index.phtml:2
+msgid "Please correct the following problems before proceeding:"
+msgstr "Si us plau corregir els següents problemes abans de procedir:"
+
+#: modules/install/views/scripts/permissions/index.phtml:10
+msgid "Check again"
+msgstr "Provi de nou"
+
+#: modules/install/views/scripts/complete/index.phtml:2
+msgid "The installation was performed successfully"
+msgstr "La instal·lació ha sigut realitzada amb éxit"
+
+#: modules/install/views/scripts/complete/index.phtml:6
+msgid "You can login as the administrator with the username and password you just provided."
+msgstr "Pot ingresar com administrador amb el nombre d'usuari i contrasenya que acaba de donar."
+
+#: modules/install/views/scripts/complete/index.phtml:7
+msgid "Please note that this user is only meant for administrative tasks, and cannot have an OpenID credential."
+msgstr "Si us plau tingui en compte que aquest usuari és només per a realitzar tasques administratives, i no pot tener una credencial OpenID."
+
+#: modules/install/views/scripts/complete/index.phtml:10
+msgid "Finish"
+msgstr "Terminar"
+
+#: modules/install/views/scripts/upgrade/index.phtml:1
+msgid "New version detected"
+msgstr "Nova versió detectada"
+
+#: modules/install/views/scripts/upgrade/index.phtml:3
+msgid "Enter the administrator credentials to proceed with the upgrade:"
+msgstr "Inserti les credencials d'administrador per a procedir amb la actualizació:"
+
+#: modules/install/views/scripts/upgrade/index.phtml:6
+msgid "Make sure you make a copy of the database before, just in case"
+msgstr "Asegúreu-vos de fer una còia de recolçament de la base de dades, por si hi han problemes"
+
+#: views/layouts/layout.phtml:33
+#: views/layouts_monkeys/layout.phtml:33
+msgid "Home"
+msgstr "Inici"
+
+#: views/layouts/layout.phtml:36
+#: views/layouts_monkeys/layout.phtml:36
+msgid "Feedback"
+msgstr "Retroalimentació"
+
+#: views/layouts/layout.phtml:42
+#: views/layouts_monkeys/layout.phtml:45
+msgid "Your OpenID is:"
+msgstr "El seu OpenID és:"
+
+#: views/layouts/layout.phtml:59
+#: views/layouts_monkeys/layout.phtml:62
+msgid "Maintenance mode is enabled: user access is restricted"
+msgstr "El modo de mantenimient està habilitat: l'acces a usuaris és restringit"
+
+#: views/layouts_monkeys/layout.phtml:39
+msgid "Help and Support"
+msgstr "Ajut i Suport"
+
+#: views/layouts_monkeys/layout.phtml:82
+msgid "Privacy"
+msgstr "Privacitat"
+
+#: views/layouts_monkeys/layout.phtml:85
+msgid "About Us"
+msgstr "Sobre Nosotros"
+
+#: views/layouts_monkeys/layout.phtml:88
+msgid "Contact Us"
+msgstr "Contacti-nos"
+
+#: plugins/stats/Sites.phtml:2
+msgid "Select view"
+msgstr "Seleccionar vista"
+
+#: plugins/stats/Sites.phtml:4
+msgid "Last Week"
+msgstr "Semana Pasada"
+
+#: plugins/stats/Sites.phtml:5
+msgid "Last Year"
+msgstr "Any Pasat"
+
+#: plugins/stats/Top.phtml:6
+#, php-format
+msgid "%s users"
+msgstr "%s usuaris"
+
+#: plugins/stats/Registrations.phtml:5
+msgid "Last Month"
+msgstr "Últim Mes"
+
+#~ msgid "Forgot you password?"
+#~ msgstr "S' ha oblidat la contrasenya?"
+#~ msgid "Entri la contrasenya de nou"
+#~ msgstr "Entri la contrasenya de noun"
+#~ msgid "Privacy Policy"
+#~ msgstr "Política de Privadesa"
+#~ msgid "About Community-id"
+#~ msgstr "Sobre Community-id"
+#~ msgid "Body:"
+#~ msgstr "Contingut:"
+#~ msgid "OPEN AN ACCOUNT NOW"
+#~ msgstr "OBRI UN COMPTE ARA"
+#~ msgid ""
+#~ "Fed up with having to remember dozens of<br />usernames and passwords<br /"
+#~ ">for your favorite websites?"
+#~ msgstr ""
+#~ "Està cansado de tener que recordar docenas de<br />nombres de usuari y "
+#~ "contraseÃ±as<br />per a sus sitios favoritos?"
+#~ msgid "Starting today<br />you'll only have to remember one"
+#~ msgstr "A partir d'avui<br />només tindrà que recordar una"
+

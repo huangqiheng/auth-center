@@ -1,0 +1,12 @@
+{userName}さん,
+
+Community-IDのopenidサーバに登録いただきありがとうございます。
+
+登録を終了するには、次のリンクをクリックしてください。
+
+{registrationURL}
+
+ありがとうございます。
+The Community-ID Team
+
+Community-ID is a service from Keyboard Monkeys Ltd. (Community as a Service)

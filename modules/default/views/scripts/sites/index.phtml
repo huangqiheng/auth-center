@@ -1,0 +1,35 @@
+<script>
+YAHOO.util.Event.onDOMReady(function () {
+    COMMID.loader.insert(
+        ["datasource", "datatable", "paginator", "json", "connection", "dragdrop", "animation", "container"],
+        function() {
+            COMMID.sitesList.init();
+            COMMID.sitesList.initTable();
+        }
+    );
+});
+</script>
+<div id="paging"></div>
+<div id="dt"></div>
+<div id="fieldsDialog">
+    <div class="hd"><?php echo $this->translate('Information Exchanged') ?></div>
+    <div class="bd">
+        <?php echo $this->translate('Information exchanged with:') ?><br />
+        <span id="fieldsDialogSite"></span>
+        <div id="fieldsDialogDl" class="formGrid"></div>
+        <div style="text-align:right">
+            <input type="button" id="closeDialog" value="<?php echo $this->translate('OK') ?>" onclick="COMMID.sitesList.closeDialog()" />
+            <script type="text/javascript">
+                YAHOO.util.Event.onDOMReady(function () {
+                    var oButton = new YAHOO.widget.Button(
+                        "closeDialog",
+                        {
+                            type    : "push",
+                            onclick : {fn: COMMID.sitesList.closeDialog}
+                        }
+                    );
+                });
+            </script> 
+        </div>
+    </div>
+</div>

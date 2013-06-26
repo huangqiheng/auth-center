@@ -1,0 +1,9 @@
+<div>
+    <?= $this->translate('Select view') ?>:
+    <select name="view" onchange="COMMID.stats.loadReport('<?= $this->plugin->getClassName() ?>', 'stats_<?= $this->plugin->getIdentifier() ?>', '/type/' + this.value)">
+        <option value="week" <?= $this->weekSelected ?>><?= $this->translate('Last Week') ?></option>
+        <option value="year" <?= $this->yearSelected ?>><?= $this->translate('Last Year') ?></option>
+    </select>
+</div>
+<img src="<?= $this->base ?>/stats/reports/graph/report/<?= $this->plugin->getClassName() ?>/type/<?= $this->type ?>/rand/<?= $this->rand ?>" />
+

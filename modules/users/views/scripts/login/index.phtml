@@ -1,0 +1,105 @@
+<?php if ($this->user->role != Users_Model_User::ROLE_GUEST ): ?>
+    <h3>
+        <?php echo $this->translate('Hello, %s', $this->escape($this->user->username)) ?>
+    </h3>
+    <ul>
+        <li>
+            <a href="<?php echo $this->base ?>/users/profile"><?php echo $this->translate('Account') ?></a>
+        </li>
+        <?php if ($this->user->role == Users_Model_User::ROLE_REGISTERED): ?>
+            <li>
+                <a href="<?php echo $this->base ?>/users/personalinfo"><?php echo $this->translate('Personal Info') ?></a>
+            </li>
+            <li>
+                <a href="<?php echo $this->base ?>/users/signinimage"><?php echo $this->translate('Sign-in Image') ?></a>
+            </li>
+            <li>
+                <a href="<?php echo $this->base ?>/sites"><?php echo $this->translate('Sites database') ?></a>
+            </li>
+            <li>
+                <a href="<?php echo $this->base ?>/history"><?php echo $this->translate('History Log') ?></a>
+            </li>
+        <?php endif ?>
+        <li>
+            <a href="<?php echo $this->base ?>/users/login/logout"><?php echo $this->translate('Logout') ?></a>
+        </li>
+    </ul>
+    <?php if ($this->user->role == Users_Model_User::ROLE_ADMIN): ?>
+        <hr />
+        <h3><?php echo $this->translate('Admin options') ?></h3>
+        <ul>
+            <li>
+                <a href="<?php echo $this->base ?>/users/manageusers"><?php echo $this->translate('Manage Users') ?></a>
+            </li>
+            <li>
+                <a href="<?php echo $this->base ?>/messageusers"><?php echo $this->translate('Message Users') ?></a>
+            </li>
+            <li>
+                <?php if ($this->maintenanceEnabled): ?>
+                    <a href="<?php echo $this->base ?>/maintenancemode/disable"><?php echo $this->translate('Disable Maintenance Mode') ?></a>
+                <?php else: ?>
+                    <a href="<?php echo $this->base ?>/maintenancemode/enable"><?php echo $this->translate('Enable Maintenance Mode') ?></a>
+                <?php endif ?>
+            </li>
+            <li>
+                <a href="<?php echo $this->base ?>/stats"><?php echo $this->translate('Statistics') ?></a>
+            </li>
+            <li>
+                <a href="<?php echo $this->base ?>/cid"><?php echo $this->translate('About Community-ID') ?></a>
+            </li>
+        </ul>
+    <?php endif ?>
+<?php else: ?>
+    <?php if ($this->underMaintenance): ?>
+        <div class="messages_small">
+            <?php echo $this->translate('User access is currently disabled for system maintenance.<br />Please try again later') ?>
+        </div>
+    <?php endif ?>
+    <form id="loginForm" action="<?php echo $this->loginTargetBase ?>/users/login/authenticate" method="post" class="formGrid">
+        <? if ($this->image): ?>
+            <div>
+                <img src="<?= $this->base ?>/users/signinimage/image/id/<?= $this->image->cookie ?>"
+                    width="<?= $this->image->getWidth() ?>"
+                    height="<?= $this->image->getHeight() ?>" 
+                    title="<?= $this->translate('This is the image that identifies your account in this computer') ?>"
+                    alt="<?= $this->translate('This is the image that identifies your account in this computer') ?>" />
+            </div>
+        <? endif ?>
+       <div id="credentials">
+            <?php echo $this->loginForm->username ?>
+            <? if ($this->yubikey->enabled && $this->yubikey->force): ?>
+                <?= $this->loginForm->yubikey ?>
+            <? else: ?>
+                <?= $this->loginForm->password ?>
+            <? endif ?>
+            <?php if ($this->useCaptcha): ?>
+                <?php echo $this->loginForm->captcha ?>
+            <?php endif ?>
+        </div>
+        <div id="rememberMe">
+            <!-- to hard to do in the ZF -->
+            <input type="checkbox" name="rememberme" style="top:0; width:15px" />
+            <label><?php echo $this->translate('Remember me') ?></label>
+        </div>
+        <div id="loginButton">
+            <input type="submit" id="login" value="<?php echo $this->translate('Log in') ?>" />
+            <script type="text/javascript">
+                var oButton = new YAHOO.widget.Button("login");
+            </script> 
+        </div>
+        <p>
+            <a href="<?php echo $this->base ?>/users/recoverpassword" class="panel_link"><?php echo $this->translate('Forgot your password?') ?></a>
+        </p>
+    </form>
+    <? if ($this->allowRegistrations): ?>
+        <hr/>
+        <div id="registerNow">
+            <p>
+                <?php echo $this->translate('You don\'t have an account?') ?>
+                <div>
+                    <a href="<?php echo $this->base ?>/users/register"><?php echo $this->translate('REGISTER NOW!') ?></a>
+                </div>
+            </p>&nbsp;<!-- safari bug workaround -->
+        </div>
+    <? endif ?>
+<? endif ?>

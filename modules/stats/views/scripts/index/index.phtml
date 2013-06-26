@@ -1,0 +1,32 @@
+<script>
+var reports = new Array();
+YAHOO.util.Event.onDOMReady(function () {
+    COMMID.loader.insert(
+        ["connection"],
+        function() {
+            for (var i = 0; i < reports.length; i++) {
+                COMMID.stats.loadReport(reports[i].name, reports[i].location);
+            }
+        }
+    );
+});
+</script>
+
+<div class="yui-g">
+    <div class="yui-u first">
+        <? foreach ($this->pluginsLeft as $plugin): ?>
+            <div id="stats_<?= $plugin->getIdentifier() ?>"></div>
+            <script>
+                reports.push({name: "<?= $plugin->getClassName() ?>", location: "stats_<?= $plugin->getIdentifier() ?>"});
+            </script>
+        <? endforeach ?>
+    </div>
+    <div class="yui-u">
+        <? foreach ($this->pluginsRight as $plugin): ?>
+            <div id="stats_<?= $plugin->getIdentifier() ?>"></div>
+            <script>
+                reports.push({name: "<?= $plugin->getClassName() ?>", location: "stats_<?= $plugin->getIdentifier() ?>"});
+            </script>
+        <? endforeach ?>
+    </div>
+</div>

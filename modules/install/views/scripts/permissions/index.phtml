@@ -1,0 +1,19 @@
+<h3>
+    <?php echo $this->translate('Please correct the following problems before proceeding:') ?>
+</h3>
+<ul>
+    <?php foreach ($this->errors as $error): ?>
+        <li style="list-style-type:circle"><?php echo $error ?></li>
+    <?php endforeach ?>
+</ul>
+<div style="margin-top:20px">
+    <input type="button" id="check" value="<?php echo $this->translate('Check again')?>" />
+    <script type="text/javascript">
+        var oButton = new YAHOO.widget.Button(
+            "check",
+            {
+                onclick: {fn: function() {location.href="<?php echo $this->base ?>/install/credentials"}}
+            }
+        );
+    </script> 
+</div>

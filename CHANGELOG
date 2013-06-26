@@ -1,0 +1,204 @@
+2010-05-26 / 2.0.0-RC3 / Reiner Jung <reiner@kb-m.com>
+
+*NEW FEATURES:*
+
+- Added check to see if cURL is enabled (needed for Yubikey)
+- Added label to list password requirements
+- Detect missing new config settings after upgrade, and show warning notice.
+
+*FIXED BUGS:*
+
+- Updated language reference files
+
+2010-05-3 / 2.0.0-RC2 / Reiner Jung <reiner@kb-m.com>
+
+*NEW FEATURES:*
+
+NONE
+
+*FIXED BUGS:*
+
+- javascript error when authenticating
+- upgrade from version prior to 1.2.1 was broken
+
+2010-04-20 / 2.0.0-RC1 / Reiner Jung <reiner@kb-m.com>
+
+*NEW FEATURES:*
+
+- Yubikey support: users can log into the community-ID  and authenticate themselves during an OpenID transaction using a Yubikey. The administrator must configure this as explained in the config.php file.  If allowed by the administrator, users can choose the authentication mode (password or Yubikey) in their account section.
+- Added PAPE extension support: implemented a phishing-resistant authentication policy, through a sign-in image a user can manage.
+- Added ability to blacklist usernames throug regular expression in the config file.
+- Check passwords against dictionary, username, minimum length, include numbers, include symbols and include upper and lower case chars. Applied to Registration form, change password form and new user form. All this configurable in config.php
+- Implemented multiple profiles for users.
+- Added cronjob script to automatically delete unconfirmed accounts.  Note that all these maintenance scripts have been removed from the release, and must be retrieved manually from svn://source.keyboard-monkeys.org/communityid/branches/scripts
+- utilities and tests directories have also been moved to a separate svn branch.
+
+*FIXED BUGS:*
+
+- Fixed javascript error under IE and Chrome.
+- The reminder counter was not being reset when a user confirmed his account.
+
+2010-03-08 / 1.2.1 / Reiner Jung <reiner@kb-m.com>
+
+*NEW FEATURES:*
+
+- NONE
+
+*FIXED BUGS:*
+
+- With the 1.2 release we introduced a bug where the login to Facebook was not working anymore
+- The reminder counter is not reset after the user confirms
+- Italian translation from Paolo Campegiani
+- Update Catalan translation 
+
+2010-02-05 / 1.2.0 / Reiner Jung <reiner@kb-m.com>
+
+*NEW FEATURES:*
+
+- NONE
+
+*FIXED BUGS:*
+
+- In the authentication page for an openid transaction, the openid shouldn't be changeable 
+- Password recovery URL was forced to be http even when the site was using https 
+- Couldn't edit user profile or change pwd
+
+2010-01-28 / 1.2.0-RC2 / Reiner Jung <reiner@kb-m.com>
+
+*NEW FEATURES:*
+
+- New plugin framework for stats
+- Catalan translation added
+
+*FIXED BUGS*
+
+- Login not working if subdomain & mixed mode enabled
+
+2009-12-04 / 1.2.0-RC1 / Reiner Jung <reiner@kb-m.com>
+
+*NEW FEATURES:*
+
+- Ability to set page metadata in the config
+- Ability to set set different resource files (email templates, eula) on a per-theme basis
+- For user data and authentication, admin can choose the default DB storage, or to connect to an LDAP server
+- Autofocus in the password field when authenticating
+
+*FIXED BUGS:*
+
+- NONE
+
+2009-11-20 / 1.1.1 / Reiner Jung <reiner@kb-m.com>
+
+NEW FEATURES:
+
+- Added more requirements checks during the installation ( PHP version, and existence of some extensions and options)
+- Language updates.
+
+FIXED BUGS:
+
+- The 'register now' section was still visible in the home page when registrations were disabled in the config file.
+
+2009-10-05 / 1.1.0 / Reiner Jung <reiner@kb-m.com>
+
+NEW FEATURES:
+
+- Japanese translation added from Kevin Fujii
+
+FIXED BUGS:
+
+- Languages updates
+- Moved language files under LC_MESSAGES directories
+- Normalization of URL stored in the sites table
+- Increase graph bottom margin to make room for x-axis labels
+- Show error messages for bad login or bad captcha when trying to log in
+- A couple of spelling/grammar issues fixed
+- upgraded jpgraph to version 3.0.4. Solves compatibility with php 5.3
+
+2009-09-18 / 1.1.0-RC2 / Reiner Jung <reiner@kb-m.com>
+
+NEW FEATURES:
+
+- During installation, ask for desired admin user username and password, instead of using the default admin/admin. The admin's E-mail is set to the support E-mail provided in that same form.
+- Language updates.
+
+FIXED BUGS:
+
+- Set admin user creation date upon installation, to the current date.
+- Not count unconfirmed users in the Trusted Sites stats graph.
+
+2009-09-07 / 1.1.0-RC1 / Reiner Jung <reiner@kb-m.com>
+
+NEW FEATURES:
+
+- Clear button in Manage Users section will clear search input box, and restore the current filtered list.
+- Updated translation strings
+- Added i18n to the account reminder E-mail template
+- When browsing users, show the number of reminders sent to unconfirmed users, in the status column.
+- Upgraded Zend Framework to latest stable version, 1.9.2
+- Completely removed the requirement of having to enable short tags in php.ini
+
+FIXED BUGS:
+
+- Fixed return on denied immediate request
+- Wasn't forgetting user after closing browser, when not using the Remember Me feature
+- Fixed issues with the unconfirmed user message reminders
+- Clean error message when attempting to install with empty config.php file
+- Fixed warning message when pdo_mysql extension is not loaded. Note that that extension still isn't a requirement, since we're still using mysqli
+- Fixed small installation issue when installing directly on the web root dir
+- After the upgrade process finishes, log out the user to avoid problems when the users table structure changes.
+
+
+2009-08-21 / 1.1.0BETA / Reiner Jung <reiner@kb-m.com>
+
+NEW FEATURES:
+
+- Community-ID news feed has been moved to a new About section, visible only by admins.
+- News in the home page are now manageable by the admin.
+- Brute-force login attempts are now mitigated through the appearance of a captcha after the third failed attempt, in both the main page login section, and when trying to log-in while during an OpenID authentication.
+- Removed requirement of having short_open_tag php.ini directive to be On.
+- The user's OpenID URL is now visible in all pages when he's logged in.
+- The Manage Users section now has a search field.
+- You're able to delete unconfirmed users that have not confirmed their account for a given number of days.
+- You're able to send a reminder to unconfirmed users that have not confirmed their account for a given number of days.
+- Added sorting ability for the History Log table. Have it sort from latest to oldest by default.
+- Replaced rich-text editor in the Message Users section with the more capable FCK Editor.
+- Rich-text editor messages are filtered through the HTMLPurifier lib, that filters out XSS and other malignous content.
+- Upgraded Zend Framework to version 1.8.4PL1
+
+
+FIXED BUGS:
+
+- Fixed compatibility with OpenID relays that send their info through POST instead of GET.
+- Fixed support for relays not sending the OpenID identifier. This fixes Facebook compatibility.
+- Fixed clashes with other Zend Frameworks located in PHP's include path.
+- Now only ascii characters will be allowed in the usernames, to avoid problems in the OpenID URL.
+- Fixed pagination issues in the Manage Users section.
+- Fixed pagination issues in the History Log section.
+- Fixed problems in the Feedback and Message Users forms.
+- Mass-mailing to users will have the recipients in BCC instead of TO, to avoid revealing E-mails to all recipients.
+- Fixed layout issue of the login checkbox "Remember me", under IE and Opera.
+- Fixed some javascript error messages under IE.
+
+
+NEW REQUIREMENTS:
+
+- Minimal supported PHP version is 5.2.4
+
+2009-04-21 / 1.0.0 / Reiner Jung <reiner@kb-m.com>
+
+NEW FEATURES:
+
+- Added configuration directives to support OpenID URLs using subdomains.
+- Add a configuration directives to set the number of news items to show.
+- When in maintenance mode, have a warning message explaining, and disable the login section.
+- Improved installation procedure.
+- Improved error handling and logging.
+- Return 404 and 401 status on page not found and access denied scenarios, respectively.
+- Don't send email on Access Denied Exceptions, as these may be caused by session timeouts.
+- Check if set_include_path() is supported by the current PHP configuration.
+- Moved from PDO Mysql to MySQLi database back-end, to avoid problems under Windows servers.
+
+FIXED BUGS:
+
+- Was throwing an exception when logging in during an openid authentication.
+- Wasn't showing 'denied' or 'authorized' in the history list

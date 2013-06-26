@@ -1,0 +1,22 @@
+<br />
+<br />
+<? if (count($this->profiles) > 0): ?>
+    <div style="margin-bottom:20px">
+        <?= $this->translate('Please select the profile you want to use:') ?>
+        <select onchange="COMMID.profileForm.fetch('<?= $this->queryString ?>', this.value, true)"
+            <?= $this->profileId == $profile->id? 'selected="true"' : '' ?>>
+            <? foreach ($this->profiles as $profile): ?>
+                <option value="<?= $profile->id ?>"><?= $profile->name ?></option>
+            <? endforeach ?>
+        </select>
+        <img id="loadingPersonalInfo" src="<?= $this->base ?>/images/progress.gif" style="visibility:hidden"/>
+    </div>
+<? endif ?>
+<input type="hidden" name="profileId" value="<?= $this->profileId ?>" />
+<? foreach ($this->fields as $field): ?>
+    <? echo $field ?>
+<? endforeach ?>
+<? if ($this->policyUrl): ?>
+   <? echo $this->translate('The privacy policy can be found at %s',
+                        '<a href="'.$this->policyUrl.'">'.$this->policyUrl.'</a>'); ?><br /><br />
+<? endif ?>

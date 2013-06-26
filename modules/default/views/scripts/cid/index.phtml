@@ -1,0 +1,22 @@
+<h2><?php echo $this->translate('About Community-ID') ?></h2>
+<div>
+    <label><?php echo $this->translate('Version installed:') ?></label>
+    <?php echo $this->version ?>
+</div>
+<div style="margin:20px 0 10px">
+    <label>
+        <?php echo $this->translate('Latest news from Community-ID:') ?>
+    </label>
+</div>
+<ul>
+    <?php foreach ($this->news as $item): ?>
+        <li>
+            <div>
+                <a href="<?php echo $item->link ?>"><?php echo $item->title ?></a>
+            </div>
+            <div class="newsExcerpt">
+                <?php echo $item->content ?>
+            </div>
+        </li>
+    <?php endforeach ?>
+</ul>

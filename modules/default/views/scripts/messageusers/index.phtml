@@ -1,0 +1,38 @@
+<!--[if IE]>
+<style>
+    /* avoid IE jumping when clearing float here */
+    #messageUsersForm #textareasWrapper dd {
+        clear       : none;
+    }
+</style>
+<![endif]-->
+<em><?php echo $this->translate('This message will be sent to all registered Community-ID users') ?></em>
+<form id="messageUsersForm" name="messageUsersForm" method="post" action="<?php echo $this->base ?>/messageusers/send" class="formGrid">
+    <input type="hidden" name="messageType" value="rich" />
+    <?php echo $this->messageUsersForm->subject ?>
+    <?php echo $this->messageUsersForm->cc ?>
+    <div id="textareasWrapper">
+        <div id="linkSwitchToPlain">
+            <a href="#" onclick="COMMID.messageUsers.switchToPlainText()"><?php echo $this->translate('switch to Plain-Text') ?></a>
+        </div>
+        <div id="linkSwitchToRich">
+            <a href="#" onclick="COMMID.messageUsers.switchToRichText()"><?php echo $this->translate('switch to Rich-Text (HTML)') ?></a>
+        </div>
+        <br />
+        <div id="bodyPlainWrapper">
+            <?php echo $this->messageUsersForm->bodyPlain ?>
+        </div>
+        <div id="bodyHTMLWrapper">
+            <?php echo $this->messageUsersForm->bodyHTML ?>
+        </div>
+    </div>
+    <input type="submit" id="send" value="<?php echo $this->translate('Send') ?>" />
+    <script type="text/javascript">
+        var oButton = new YAHOO.widget.Button("send");
+    </script> 
+</form>
+<script type="text/javascript">
+    YAHOO.util.Event.onDOMReady(function() {
+        $("messageUsersForm").onsubmit = COMMID.messageUsers.send;
+    });
+</script>

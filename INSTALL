@@ -1,0 +1,14 @@
+This is the initial Install file for Community-ID. 
+
+UPGRADE PROCEDURE:
+
+- Replace all files with the new release, only conserving the config.php file.
+- When going to the site, the upgrade will be detected automatically, 
+and you'll be asked to enter the admin credentials to proceed with the 
+upgrade.
+
+INSTALL PROCEDURE:
+
+For more information how to install Community-ID please have a look at the projekt wiki:
+
+http://source.keyboard-monkeys.org/wiki/communityid/How_to_install_Community-ID_under_Linux

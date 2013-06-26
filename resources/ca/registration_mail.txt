@@ -1,0 +1,11 @@
+Benvolgut {userName},
+
+Gràcies per registrar-se en Community-ID.org
+
+Per a continuar amb el procés de registre, si us plau cliqui en el següent enllaç:
+
+{registrationURL}
+
+
+Gràcies,
+L'Equip de Community-ID.org

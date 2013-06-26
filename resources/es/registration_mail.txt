@@ -1,0 +1,11 @@
+Apreciado {userName},
+
+Gracias por registrarse en community-id.org
+
+Para continuar con el proceso de registro, por favor haga click en el siguiente enlace:
+
+{registrationURL}
+
+
+Gracias,
+El Equipo de Community-ID

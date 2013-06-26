@@ -1,0 +1,12 @@
+If using Lighttpd as your web server, add the following to Lighttpd's main config file:
+
+url.rewrite-once = (
+   "(.*\.(js|ico|gif|jpg|png|css|html|php|xml))(\?.*)?$" => "$1",
+   ".*\?(.*)$" => "/index.php?$1",
+   "" => "/index.php"
+)
+
+Note: The "php" part in the first rule is to be able to load the javascript language file, which is actually a php file.
+
+Make sure you have mod_rewrite enabled by putting the following somewhere above the previous block:
+server.modules += ("mod_rewrite")

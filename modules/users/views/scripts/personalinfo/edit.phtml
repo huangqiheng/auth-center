@@ -1,0 +1,29 @@
+<form name="personalInfoForm" class="formGrid" method="post" action="<?= $this->base ?>/users/personalinfo/save/profile/<?= $this->profile->id ?>">
+    <?php foreach ($this->fields as $field): ?>
+        <?php echo $field ?>
+    <?php endforeach ?><br />
+    <input type="submit" id="save" value="<?php echo $this->translate('Save') ?>" />
+    <input type="button" id="cancel" value="<?php echo $this->translate('Cancel') ?>" onclick="COMMID.editPersonalInfo.cancel()" />
+    <script type="text/javascript">
+        YAHOO.util.Event.onDOMReady(function () {
+            COMMID.loader.insert(
+                ["connection"],
+                null
+            );
+        });
+
+        var oButton = new YAHOO.widget.Button(
+            "save",
+            {
+                type    : "submit"
+            }
+        );
+        var oButton = new YAHOO.widget.Button(
+            "cancel",
+            {
+                type    : "push",
+                onclick : {fn: function() {COMMID.personalInfo.cancel();}}
+            }
+        );
+    </script> 
+</form>

@@ -1,0 +1,6 @@
+Modifications to the jpgraph lib:
+    - this is just the src directory
+    - copied the README and VERSION files
+    - removed the Examples dir
+    - removed the flags* files
+    - added fonts path in file jpg-config.inc.php, line 43

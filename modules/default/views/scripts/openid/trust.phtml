@@ -1,0 +1,39 @@
+<div id="article">
+    <div>
+        <?php echo $this->translate('A site identifying as %s has asked for confirmation that %s is your identity URL.', '<a href="' . $this->siteRoot . '">' . $this->siteRoot . '</a>', '<a href="' . $this->identityUrl . '">' . $this->identityUrl . '</a>') ?>
+    </div>
+    <form method="post" action="proceed<?php echo $this->queryString ?>" class="formGrid">
+        <input type="hidden" name="action" value="proceed">
+        <? if ($this->showProfileForm): ?>
+            <br />
+            <?php echo $this->translate('It also requests this additional information about you:') ?><br /><br />
+            <?php echo $this->translate('Fields are automatically filled according to the personal info stored in your community-id account.') ?><br />
+            <?php echo $this->translate('Fields marked with * are required.') ?>
+            <br />
+            <div id="profileForm">
+                <? if ($this->showProfileForm): ?>
+                    <div style="text-align:center; margin:20px 0; font-weight:bold">
+                        <?= $this->translate('Please wait') ?>
+                        <img src="<?= $this->base ?>/images/progress.gif" style="margin-left:15px" />
+                    </div>
+                <? endif ?>
+            </div>
+        <?php endif ?>
+        <div style="margin-top:20px">
+            <input type="checkbox" name="forever" style="top:0" /> <?php echo $this->translate('Forever') ?>
+        </div>
+        <div style="margin-top:20px">
+            <input type="submit" id="allow" name="allow" value="<?php echo $this->translate('Allow') ?>" />
+            <input type="submit" id="deny" name="deny" value="<?php echo $this->translate('Deny') ?>" />
+            <script type="text/javascript">
+                var oButton1 = new YAHOO.widget.Button("allow");
+                var oButton2 = new YAHOO.widget.Button("deny");
+                <? if ($this->showProfileForm): ?>
+                    YAHOO.util.Event.onDOMReady(function() {
+                        COMMID.profileForm.fetch("<?= $this->queryString ?>", 0);
+                    });
+                <? endif ?>
+            </script> 
+        </div>
+    </form>
+</div>

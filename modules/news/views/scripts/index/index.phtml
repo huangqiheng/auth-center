@@ -1,0 +1,34 @@
+<?php if ($this->user->role == Users_Model_User::ROLE_ADMIN): ?>
+    <div class="linksTopRightContainer">
+        <h2><?php echo $this->translate('Latest News') ?></h2>
+        <div class="linksTopRight">
+            <a href="<?php echo $this->base ?>/news/edit/add"><?php echo $this->translate('Add New Article') ?></a>
+        </div>
+    </div>
+<?php endif ?>
+<?php if (count($this->paginator) == 0): ?>
+    <div><?php echo $this->translate('There are no news articles yet') ?></div>
+<?php else: ?>
+    <?php foreach ($this->paginator as $article): ?>
+    <div class="post">
+        <h3><a href="<?php echo $this->base . '/news/' . $article->id ?>"><?php echo $article->title ?></a></h3>
+        <div class="article_date">
+            <?php echo $this->translate("Published on %s", $article->date) ?>
+        </div>
+        <p><?php echo $article->excerpt ?></p>
+        <p class="more">
+            <a href="<?php echo $this->base . '/news/' . $article->id ?>">
+                <?php echo $this->translate('read more') ?>
+            </a>
+        </p>
+    </div>
+    <?php endforeach; ?>
+<?php endif ?>
+<?php if ($this->paginator->count() > 1): ?>
+    <?php echo $this->paginationControl($this->paginator,
+                                 'Sliding',
+                                 'index/pagination.phtml',
+                                 array(
+                                    'base'      => $this->base
+                                 )) ?>
+<?php endif ?>

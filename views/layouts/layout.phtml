@@ -1,0 +1,94 @@
+<?php echo $this->doctype(Zend_View_Helper_Doctype::XHTML1_STRICT); ?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <?= $this->headMeta() ?>
+    <?php echo $this->headTitle('Community ID'); ?>
+    <link rel="shortcut icon" href="<?php echo $this->base ?>/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="<?php echo $this->base ?>/javascript/yui/assets/skins/sam/skin.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo $this->base ?>/javascript/yui/reset-fonts-grids/reset-fonts-grids.css" />
+	<link rel="stylesheet" href="<?php echo $this->base ?>/styles/style.css?v=<?php echo $this->version ?>" type="text/css" media="screen" charset="utf-8"/>
+    <?php echo $this->headLink() ?>
+    <?php echo $this->headStyle() ?>
+    <script type="text/javascript" src="<?php echo $this->base ?>/javascript/yui/utilities/utilities.js"></script>
+    <script type="text/javascript" src="<?php echo $this->base ?>/javascript/tools-min.js"></script>
+
+    <?php // we want the button lib to be loaded before any button is actually shown ?>
+    <script type="text/javascript" src="<?php echo $this->base ?>/javascript/yui/button/button-min.js"></script>
+
+    <!-- <script type="text/javascript" src="<?php echo $this->base ?>/javascript/yui/logger/logger-min.js"></script>-->
+    <?php echo $this->headScript() ?>
+</head>
+<body class="yui-skin-sam">
+<!-- <script type="text/javascript">
+var myLogReader = new YAHOO.widget.LogReader();
+</script>-->
+<div id="doc4" class="<?php echo $this->numCols == 2 ? 'yui-t6' : ''?>">
+   <div id="hd">
+        <div id="logoAndLinks">
+            <img id="logo" src="<?php echo $this->base ?>/images/logo.gif" />
+            <div id="topNav"><!-- gotta wrap the UL for an IE bug workaround -->
+                <ul>
+                    <li>
+                        <a href="<?php echo $this->base ?>/"><?php echo $this->translate('Home') ?></a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $this->base ?>/feedback"><?php echo $this->translate('Feedback') ?></a>
+                    </li>
+                </ul>
+            </div>
+            <?php if ($this->user->role == Users_Model_User::ROLE_REGISTERED): // (not guest nor admin) ?>
+                <div id="openid">
+                    <?php echo $this->translate('Your OpenID is:') ?>
+                    <a href="<?php echo $this->user->openid ?>"><?php echo $this->user->openid ?></a>
+                </div>
+            <?php endif ?>
+        </div>
+        <?php echo $this->layout()->subHeader ?>
+   </div> 
+   <div id="bd">
+        <div id="yui-main">
+            <div class="yui-b <?php echo $this->numCols == 1? 'singleColumn' : 'doubleColumn' ?>" id="content">
+                <?php if ($this->messages): ?>
+                    <div class="messages">
+                        <?php echo implode('<br />', $this->messages) ?>
+                    </div>
+                <?php endif ?>
+                <?php if ($this->underMaintenance && $this->user->role != Users_Model_User::ROLE_GUEST): ?>
+                    <div class="messages">
+                        <?php echo $this->translate('Maintenance mode is enabled: user access is restricted') ?>
+                    </div>
+                <?php endif ?>
+
+                <?php echo $this->layout()->content ?>
+            </div>
+        </div>
+        <?php if ($this->numCols == 2): ?>
+            <div class="yui-b" id="sidebar">
+                <div id="sidebarContents">
+                    <?php echo $this->layout()->sidebar ?>
+                </div>
+                <div class="borderFadingLeft">
+                </div>
+            </div>
+        <?php endif ?>
+   </div> 
+   <div id="ft">
+        <div id="copyright">
+            <p>Copyright &#169; 2008-2009 Keyboard Monkeys Ltd. Community as a Service &#x2122;</p>
+        </div>
+   </div> 
+</div>
+<script type="text/javascript" src="<?php echo $this->base ?>/javascript/language.php?v=<?php echo $this->version ?>"></script>
+<script type="text/javascript" src="<?php echo $this->base ?>/javascript/communityid.js?v=<?php echo $this->version ?>"></script>
+<script type="text/javascript">
+    COMMID.baseDir = "<?php echo $this->base ?>";
+    COMMID.userId = <?php echo $this->user->id? $this->user->id : 0 ?>;
+    COMMID.userRole = "<?php echo $this->user->role ?>";
+    COMMID.targetUserId = <?php echo is_null($this->targetUser->id)? 0 : $this->targetUser->id ?>;
+
+    COMMID.loader.combine = <?php echo $this->loaderCombine ?>;
+    COMMID.loader.base = "<?php echo $this->loaderBase ?>";
+</script>
+</body>
+</html>

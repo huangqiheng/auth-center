@@ -1,0 +1,11 @@
+Apreciado {userName},
+
+No hemos recibido confirmación de su cuenta en community-id.org.
+
+Por favor confirme su cuenta haciendo clic en el siguiente enlace, o de lo contrario su cuenta será eliminada en pocos dias:
+
+{registrationURL}
+
+
+Gracias,
+El equipo de Community-ID

@@ -1,0 +1,30 @@
+<h2><?php echo $this->translate('Please read the following EULA in order to continue') ?></h2>
+<form name="eulaForm" action="accepteula" method="post">
+    <input type="hidden" name="token" value="<?php echo $this->token ?>" />
+    <div>
+        <textarea rows="30" style="width:700px"><?php echo $this->eula ?></textarea>
+    </div>
+    <div style="margin-top:20px">
+        <input type="submit" id="agree" value="<?php echo $this->translate('I AGREE') ?>" />&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit" id="disagree" value="<?php echo $this->translate('I DISAGREE') ?>" onclick="this.form.action='declineeula'; return true" />
+        <script>
+            YAHOO.util.Event.onDOMReady(function () {
+                COMMID.loader.insert(
+                    ["button"],
+                    function() {
+                        new YAHOO.widget.Button("disagree", {
+                            type: "push",
+                            label: "I DISAGREE",
+                            onclick : {fn: function(){
+                                document.eulaForm.action = 'declineeula';
+                                document.eulaForm.submit();
+                            }}
+                        });
+                        new YAHOO.widget.Button("disagree");
+                        new YAHOO.widget.Button("agree");
+                    }
+                );
+            });
+        </script>
+    </div>
+</form>

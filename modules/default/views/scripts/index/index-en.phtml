@@ -1,0 +1,59 @@
+<div id="home">
+    <h2>
+        Community ID: Free OpenID Authentication<br />
+        Backed 100% with Open Source Technologies
+    </h2>
+    <div class="yui-g"> 
+        <div class="yui-u first">
+            <p>
+                Since its inception Community-ID has been built with security as the foremost concern. Every element in our technology stack has been chosen looking at its security record, and most importantly, everything is Open Source.
+            </p>
+            <p>
+                This means we're open to scrutiny by the entire world. It is already a proven fact that security by obscurity doesn't work, and when you use a product or service whose underlying mechanism is kept as a secret, you're putting your data (and therefore yourself) into great risk. 
+            </p>
+            <p style="font-weight: bold; text-align:center">
+                What are you waiting for?<br />
+                Simplify your life and reduce your risk exposure.<br /><br />
+                <a href="<?php echo $this->base ?>/users/register">OPEN AN ACCOUNT NOW</a>
+            </p>
+        </div> 
+        <div class="yui-u">
+            <div id="homeNews">
+                <h3>Latest News</h3>
+                <ul>
+                    <?php foreach ($this->news as $item): ?>
+                        <li>
+                            <div>
+                                <a href="<?php echo $this->base . '/news/' . $item->id ?>"><?php echo $item->title ?></a>
+                            </div>
+                            <div class="newsExcerpt">
+                                <?php echo $item->excerpt ?>
+                                <div>
+                                    <a class="readMore" href="<?php echo $this->base . '/news/' . $item->id ?>"><?php echo $this->translate('Read More') ?></a>
+                                </div>
+                            </div>
+                        </li>
+                    <?php endforeach ?>
+                    <?php if (count($this->news) == 0): ?>
+                        <div>
+                            <?php echo $this->translate('There are no news articles yet') ?>
+                        </div>
+                    <?php endif ?>
+                </ul>&nbsp; <!-- FF bug -->
+                <div style="position:relative">
+                    <div class="linksTopRight">
+                        <?php if (count($this->news) > 0): ?>
+                            <a href="<?php echo $this->base ?>/news"><?php echo $this->translate('View All') ?></a>
+                        <?php endif ?>
+                        <?php if ($this->user->role == Users_Model_User::ROLE_ADMIN): ?>
+                            &nbsp;|&nbsp;
+                            <a href="<?php echo $this->base ?>/news/edit/add"><?php echo $this->translate('Add New Article') ?></a>
+                        <?php endif ?>
+                    </div>
+                </div>
+            </div>
+            <div class="borderFadingLeft">
+            </div>
+        </div> 
+    </div> 
+</div>

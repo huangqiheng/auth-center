@@ -1,0 +1,10 @@
+<table id="topTenTable">
+    <?php foreach ($this->sites as $num => $siteInfo): ?>
+    <tr>
+        <td><?php echo $num + 1 ?></td>
+        <td><?php echo $siteInfo['site'] ?></td>
+        <td>(<?php echo $this->translate('%s users', $siteInfo['num']) ?>)</td>
+    </tr>
+    <?php endforeach ?>
+</table>
+
